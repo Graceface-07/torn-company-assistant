@@ -20,6 +20,18 @@ The **Music Store** thrives on minimal oversight. It's like an indie band with a
 | 👥 Staff Roles  | Sales Reps + Manual for speed          |
 | 💽 Focus Perks  | Bonus items, passive income            |
 
+## 🎁 Job Specials
+
+| ⭐ | Name          | Type       | Cost       | Effect                         |
+|----|---------------|------------|------------|--------------------------------|
+| 1★ | Ambience      | Job Points | 1 JP       | +50 happiness                  |
+| 3★ | Well Tuned    | Passive    | –          | +30% gym experience            |
+| 5★ | High-fidelity | Passive    | –          | 2.0 opponent stealth reduction |
+| 7★ | Deafened      | Job Points | 10 JP      | Maximum stealth                |
+|10★ | The Score     | Passive    | –          | +15% passive battle stats      |
+
+💡 *This company is a stealth/gym powerhouse. Players often join briefly for "Well Tuned" at 3★, or long-term for PvP edge at 10★.*
+
 ## 🎁 Perks Breakdown
 
 | Perk                     | Effect                                   | Unlocks at           |

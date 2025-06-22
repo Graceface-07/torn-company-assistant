@@ -1,69 +1,79 @@
-# 🕵️ Analyze My Company (Live API Key)
-
-This tool connects directly to Torn’s API using your company-enabled key to provide real-time analysis.
-
-> 🛡️ Your API key is embedded directly. Only use this for personal/private versions of your site.
-
----
-
-## 🧰 Company Snapshot
-
-<div id="company-info">
-  <p>Fetching company details...</p>
-</div>
+<h2>🏢 Analyze My Company</h2>
+<button onclick="analyzeCompany()" style="padding:6px 12px;">🔍 Analyze</button>
+<div id="company-result" style="margin-top:15px; font-family: sans-serif;"></div>
 
 <script>
-  const API_KEY = "NVMCjgpq86wpcPCF"; // ✅ Your validated key with company access
+function analyzeCompany() {
+  const key = localStorage.getItem("torn_api_key");
+  const div = document.getElementById("company-result");
+  if (!key) {
+    div.innerHTML = "<p style='color:red;'>❌ No API key found. Please enter or save one first.</p>";
+    return;
+  }
 
-  fetch(`https://api.torn.com/company/?selections=profile,basic&key=${API_KEY}`)
+  fetch(`https://api.torn.com/company/?key=${key}`)
     .then(res => res.json())
     .then(data => {
-      if (!data.company_profile) {
-        document.getElementById("company-info").innerHTML =
-          "<p style='color:red;'>❌ Key is valid, but company data is unavailable. Double-check Torn access settings.</p>";
+      if (data.error) {
+        div.innerHTML = `<p style='color:red;'>❌ API Error: ${data.error.error}</p>`;
         return;
       }
 
-      const company = data.company_profile;
-      const staffList = Object.values(data.company_employees || {});
-      const staffCount = staffList.length;
-      const avgLoyalty = staffCount
-        ? (staffList.reduce((sum, e) => sum + e.days_in_company, 0) / staffCount).toFixed(1)
-        : 0;
+      if (!data.company || !data.company.name) {
+        div.innerHTML = `<p style='color:orange;'>❓ Key is valid, but no company data returned.<br>Make sure you're in a company and your API key has <strong>Company</strong> permission.</p>`;
+        return;
+      }
 
-      document.getElementById("company-info").innerHTML = `
-        <p><strong>📛 Name:</strong> ${company.name}</p>
-        <p><strong>🏢 Type:</strong> ${company.type}</p>
-        <p><strong>📈 Tier:</strong> ${company.upgrade}</p>
-        <p><strong>👥 Staff Count:</strong> ${staffCount}</p>
-        <p><strong>📅 Avg Loyalty:</strong> ${avgLoyalty} days</p>
-        <p><strong>💡 Insight:</strong> ${generateInsight(company.type, avgLoyalty)}</p>
+      const c = data.company;
+      const revenuePer = Math.round(c.weekly_income / c.employees_hired || 1).toLocaleString();
+
+      let html = `
+        <p style="color:green; font-weight:bold;">✅ Loaded: ${c.name}</p>
+        <ul>
+          <li>🏢 ID: ${c.ID}</li>
+          <li>🏷️ Type: ${c.company_type}</li>
+          <li>⭐ Rating: ${c.rating} stars</li>
+          <li>👥 Staffed: ${c.employees_hired} / ${c.employees_capacity}</li>
+          <li>📈 Weekly Income: \$${c.weekly_income.toLocaleString()} (${revenuePer} per employee)</li>
+          <li>📅 Days Old: ${c.days_old}</li>
+        </ul>
       `;
+
+      html += `<h3>👤 Employees (${Object.keys(c.employees).length})</h3>`;
+      html += `<table border="1" cellpadding="6" style="border-collapse: collapse;">
+        <tr><th>Name</th><th>Role</th><th>Days</th><th>Status</th></tr>`;
+
+      for (const id in c.employees) {
+        const e = c.employees[id];
+        const status = e.status.state === "Hospital" || e.status.state === "Traveling"
+          ? `<span style="color:orange;">${e.status.description}</span>`
+          : `<span style="color:green;">${e.status.description}</span>`;
+
+        html += `<tr>
+          <td>${e.name}</td>
+          <td>${e.position}</td>
+          <td>${e.days_in_company}</td>
+          <td>${status}</td>
+        </tr>`;
+      }
+
+      html += `</table><br>`;
+
+      // Quick suggestion logic based on roles
+      const roles = Object.values(c.employees).map(e => e.position);
+      const totalDrivers = roles.filter(r => r.toLowerCase().includes("driver")).length;
+      const totalManagers = roles.filter(r => r.toLowerCase().includes("manager")).length;
+
+      html += `<h4>🧠 Suggestions</h4><ul>`;
+      if (totalDrivers < 3) html += `<li>🚛 Consider hiring more Drivers to optimize transport speed.</li>`;
+      if (totalManagers < 2) html += `<li>📊 Add a second manager to keep efficiency high.</li>`;
+      if (c.employees_hired === c.employees_capacity) html += `<li>👥 Your staff capacity is maxed—consider upgrading for growth.</li>`;
+      html += `</ul>`;
+
+      div.innerHTML = html;
     })
     .catch(err => {
-      document.getElementById("company-info").innerHTML =
-        `<p style='color:red;'>❌ Error fetching data: ${err.message}</p>`;
+      div.innerHTML = `<p style="color:red;">❌ Fetch error: ${err.message}</p>`;
     });
-
-  function generateInsight(type, loyaltyStr) {
-    const loyalty = parseFloat(loyaltyStr);
-    const tips = {
-      "Sweet Shop": loyalty >= 30
-        ? "✅ Candy drops likely active—maintain staff loyalty to keep them flowing."
-        : "🍬 Boost loyalty past 30 days to activate candy perks.",
-      "Farm": loyalty >= 40
-        ? "🌾 Happiness and energy bonuses active—expand if needed."
-        : "🌱 Build to 40+ day loyalty for steady passive perks.",
-      "Music Store": loyalty >= 35
-        ? "🎶 Item drops probably online—check your item log."
-        : "📈 Push loyalty over 35 days to trigger perks.",
-      "Software Corporation": loyalty >= 50
-        ? "💻 Energy regen and cooldown perks should now be live."
-        : "👷 Steady loyalty growth unlocks passive scaling.",
-      "TV Station": loyalty >= 45
-        ? "📺 Crime XP likely enabled—perfect for faction synergy."
-        : "📰 Loyalty grind → top-tier XP and regen boosts."
-    };
-    return tips[type] || "🛠 No tailored insight for this company type yet—want to help me add it?";
-  }
+}
 </script>

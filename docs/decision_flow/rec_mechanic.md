@@ -28,6 +28,18 @@
 | 🕒 Gym Cooldown Cut     | Slight cooldown reduction            | Mid-tier level           |
 | 💸 Consistent Revenue   | Great for cashflow, STR-focused teams| Any staffed level        |
 
+## 🎁 Job Specials
+
+| ⭐ | Name               | Type       | Cost       | Effect                         |
+|----|--------------------|------------|------------|--------------------------------|
+| 1★ | Garage Discount    | Job Points | 1 JP       | 10% off car mods               |
+| 3★ | Wrench Time        | Passive    | –          | +10% driving EXP               |
+| 5★ | Pit Crew Boost     | Job Points | 5 JP       | Repair cooldown -50%          |
+| 7★ | Nitro Stockpile    | Job Points | 10 JP      | Add nitro to vehicle           |
+|10★ | Horsepower Heaven  | Passive    | –          | +25% car racing EXP            |
+
+💡 *Ideal for Racing Hall goals. Best paired with TCP stock and car-hacking projects.*
+
 ## 📈 Tips for Success
 
 - Ideal pick for strength-based players  

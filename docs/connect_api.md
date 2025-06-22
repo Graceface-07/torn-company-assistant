@@ -43,3 +43,32 @@ Enter your API key below so the assistant can personalize its recommendations.
 
   window.onload = loadProfile;
 </script>
+<h2>🔑 Test Your API Key</h2>
+<p>Click below to check if your key is valid and has the right permissions.</p>
+<button onclick="testApiKey()">✅ Test My Key</button>
+<div id="key-test-result" style="margin-top:10px;"></div>
+
+<script>
+function testApiKey() {
+  const key = localStorage.getItem("torn_api_key");
+  const resultDiv = document.getElementById("key-test-result");
+
+  if (!key) {
+    resultDiv.innerHTML = "<p style='color:red;'>❌ No API key found. Please enter one first.</p>";
+    return;
+  }
+
+  fetch(`https://api.torn.com/user/?selections=basic&key=${key}`)
+    .then(res => res.json())
+    .then(data => {
+      if (data.error) {
+        resultDiv.innerHTML = `<p style='color:red;'>❌ Invalid API key: ${data.error.error}</p>`;
+      } else {
+        resultDiv.innerHTML = `<p style='color:green;'>✅ Key works! Welcome, ${data.name} (Level ${data.level})</p>`;
+      }
+    })
+    .catch(err => {
+      resultDiv.innerHTML = `<p style='color:red;'>❌ Something went wrong: ${err.message}</p>`;
+    });
+}
+</script>

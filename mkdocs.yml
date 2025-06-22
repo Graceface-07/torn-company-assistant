@@ -1,18 +1,38 @@
 site_url: https://Graceface-07.github.io/torn-company-assistant/
 site_name: Torn Company Assistant
+
 theme:
   name: material
 
 nav:
   - Home: main_menu.md
-  - Analyze Profile: profile_analysis.md
-  - Start or Buy: start_or_buy.md
-  - Join a Company: join_company.md
-  - Analyze Company: analyse_company.md
-  - Load API Key: load_profile.md
-  - Connect API: connect_api.md
-  - Analyze My Company: analyse_company.md
+  - Overview: README.md
+  - Roadmap: ROADMAP.md
+  - Decision Flow:
+      - Should I Start or Buy a Company?: start_or_buy.md
+      - Airline Recommendation: decision_flow/rec_airline.md
+      - Candle Shop Recommendation: decision_flow/rec_candle_shop.md
+      - Farm Recommendation: decision_flow/rec_farm.md
+      - Furniture Store Recommendation: decision_flow/rec_furniture_store.md
+      - Game Development Recommendation: decision_flow/rec_game_development.md
+      - Mechanic Recommendation: decision_flow/rec_mechanic.md
+      - Music Store Recommendation: decision_flow/rec_music_store.md
+      - Restaurant Recommendation: decision_flow/rec_restaurant.md
+      - Software Corp Recommendation: decision_flow/rec_software_corp.md
+      - TV Station Recommendation: decision_flow/rec_tv_station.md
 
+  - Profile Tools:
+      - Analyze Profile: profile_analysis.md
+      - Load API Key: load_profile.md
+      - Performance Review: performance_review.md
+
+  - Company Tools:
+      - Analyze Company: analyse_company.md
+      - Join a Company: join_company.md
+
+  - API Setup: connect_api.md
+
+  
 
 
 markdown_extensions:
