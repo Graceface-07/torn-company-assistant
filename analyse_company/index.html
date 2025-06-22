@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#analyze-my-company-api-enabled" class="md-skip">
+        <a href="#analyze-my-company-live-api-key" class="md-skip">
           Skip to content
         </a>
       
@@ -516,10 +516,10 @@
 
 
 
-<h1 id="analyze-my-company-api-enabled">🕵️ Analyze My Company (API-Enabled)</h1>
-<p>This tool uses your private Torn API key to fetch your company details and generate real-time analysis.</p>
+<h1 id="analyze-my-company-live-api-key">🕵️ Analyze My Company (Live API Key)</h1>
+<p>This tool uses your Torn API key to fetch your company details and generate instant recommendations.</p>
 <blockquote>
-<p>⚠️ Your API key is embedded directly into this page. Only use this locally or in trusted environments!</p>
+<p>🔐 This version is preloaded with your API key. Use with caution and never expose your key publicly.</p>
 </blockquote>
 <hr />
 <h2 id="company-snapshot">🧰 Company Snapshot</h2>
@@ -528,7 +528,7 @@
 </div>
 
 <script>
-  const API_KEY = "YOUR_API_KEY_HERE"; // 🔒 Replace this with your real Torn API key
+  const API_KEY = "AEpIkmv2KydIKtaL"; // 🔒 Your live Torn key
 
   fetch(`https://api.torn.com/company/?selections=profile,basic&key=${API_KEY}`)
     .then(res => res.json())
@@ -552,29 +552,29 @@
     })
     .catch(err => {
       document.getElementById("company-info").innerHTML =
-        `<p style="color:red;">⚠️ Error fetching data: ${err.message}. Check your API key or company access level.</p>`;
+        `<p style="color:red;">❌ Error fetching data: ${err.message}</p>`;
     });
 
   function generateInsight(type, loyaltyStr) {
     const loyalty = parseFloat(loyaltyStr);
     const tips = {
       "Sweet Shop": loyalty >= 30
-        ? "✅ Candy drops likely active—nice work!"
-        : "🍬 Try boosting staff loyalty past 30 days for candy perks.",
+        ? "✅ Candy drops are likely active—keep staff loyal to maintain perks."
+        : "🍬 Push average loyalty past 30 days to unlock candy perks.",
       "Farm": loyalty >= 40
-        ? "🌾 Regen and happiness perks active—enjoy the passive bonuses!"
-        : "🌱 Boost loyalty for energy and stat synergy.",
+        ? "🌾 Happiness and energy bonuses are likely online—consider scaling further."
+        : "🌱 Build loyalty toward 40+ days to activate core perks.",
       "Music Store": loyalty >= 35
-        ? "🎶 Item drops should be showing up—check your logs."
-        : "📈 Try pushing loyalty past 35 days for bonuses.",
+        ? "🎶 Bonus item drops should be active—keep those employees happy!"
+        : "📈 Target 35+ day loyalty to trigger drops.",
       "Software Corporation": loyalty >= 50
-        ? "💻 Energy regen and cooldown reduction likely in effect."
-        : "👷 Keep long-term hires to unlock powerful passive perks.",
+        ? "💻 Cooldown and energy regen perks should be active."
+        : "👷 Hire long-term INT staff and aim for 50+ day loyalty for max efficiency.",
       "TV Station": loyalty >= 45
-        ? "📺 Crime XP boost probably unlocked—great for faction synergy."
-        : "📰 You're on the right path—scale up staffing and loyalty."
+        ? "📺 Crime XP bonuses likely in play—ideal if you're faction-strategizing."
+        : "📰 Build loyalty to unlock game-changing crime and regen perks."
     };
-    return tips[type] || "🛠 No insight yet for this company type—submit yours to help us expand!";
+    return tips[type] || "🛠 Insight unavailable yet for this company type. Try hiring, upgrading, or scaling loyalty.";
   }
 </script>
 
