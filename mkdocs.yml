@@ -1,47 +1,30 @@
-site_url: https://Graceface-07.github.io/torn-company-assistant/
-site_name: Torn Company Assistant
+site_name: Torn Assistant
+site_url: https://your-custom-url.com
+
+nav:
+  - Home: index.md
+  - Company Profiles:
+      - Profile Index: company_profiles/index.md
+      - Job Special Guide: company_profiles/job_specials.md
+  - Decision Flow:
+      - Start: decision_flow/index.md
+      - Goals:
+          - Profit: decision_flow/goal_profit.md
+          - Stats: decision_flow/goal_stats.md
+          - Strategy: decision_flow/goal_strategy.md
+          - Social: decision_flow/goal_social.md
+      - Budget Paths:
+          - Low Profit: decision_flow/budget_low_profit.md
+          - Mid Profit: decision_flow/budget_mid_profit.md
+          - High Profit: decision_flow/budget_high_profit.md
+  - Recommendations: output/recommendations.md
 
 theme:
   name: material
-
-nav:
-  - Home: main_menu.md
-  - Roadmap: ROADMAP.md
-  - Decision Flow:
-      - Should I Start or Buy a Company?: start_or_buy.md
-      - Airline Recommendation: decision_flow/rec_airline.md
-      - Candle Shop Recommendation: decision_flow/rec_candle_shop.md
-      - Farm Recommendation: decision_flow/rec_farm.md
-      - Furniture Store Recommendation: decision_flow/rec_furniture_store.md
-      - Game Development Recommendation: decision_flow/rec_game_development.md
-      - Mechanic Recommendation: decision_flow/rec_mechanic.md
-      - Music Store Recommendation: decision_flow/rec_music_store.md
-      - Restaurant Recommendation: decision_flow/rec_restaurant.md
-      - Software Corp Recommendation: decision_flow/rec_software_corp.md
-      - TV Station Recommendation: decision_flow/rec_tv_station.md
-
-  - Company Info:
-      - Farm: company_profiles/farm.md
-      - Furniture Store: company_profiles/furniture_store.md
-      - Game Development: company_profiles/game_development.md
-      - Mechanic: company_profiles/mechanic.md
-      - Music Store: company_profiles/music_store.md
-      - Restaurant: company_profiles/restaurant.md
-      - Software Corporation: company_profiles/software_corporation.md
-      - Sweet Shop: company_profiles/sweet_shop.md
-      - TV Station: company_profiles/tv_station.md
-
-  - Profile Tools:
-      - Analyze Profile: profile_analysis.md
-      - Load API Key: load_profile.md
-      - Performance Review: performance_review.md
-
-  - Company Tools:
-      - Analyze Company: analyse_company.md
-      - Join a Company: join_company.md
-
-  - API Setup: connect_api.md
+  language: en
 
 markdown_extensions:
   - admonition
-  - pymdownx.details
+  - codehilite
+  - toc:
+      permalink: true

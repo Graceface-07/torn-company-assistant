@@ -1,6 +1,6 @@
 [🏠 Return to Main Menu](main_menu.md)
 
-# 🔑 Load Your Torn API Key
+# Load Your Torn API Key
 
 To personalize your assistant experience, you can load your **Torn public API key**. This unlocks smart, stat-based suggestions tailored to your profile.
 
@@ -9,7 +9,7 @@ To personalize your assistant experience, you can load your **Torn public API ke
 
 ---
 
-## 📍 Where to Find Your API Key
+## Where to Find Your API Key
 
 1. Go to: [https://www.torn.com/preferences.php#tab=api](https://www.torn.com/preferences.php#tab=api)  
 2. Locate the **Public API Key** section  
@@ -19,7 +19,7 @@ To personalize your assistant experience, you can load your **Torn public API ke
 
 ---
 
-## 📥 Paste your API key below (or share it privately for testing):
+## Paste your API key below (or share it privately for testing):
 
 **API Key:**  
 `abc123yourkeyhere...`
@@ -29,7 +29,7 @@ _(For local testing, this can be stored in a temporary session file or passed be
 
 ---
 
-## 🔓 Once connected, unlock:
+## Once connected, unlock:
 
 - [🧬 Analyze My Profile](profile_analysis.md)  
  Use real stats to find your top-fit company types

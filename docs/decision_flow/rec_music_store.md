@@ -1,18 +1,18 @@
 [⬅️ Back to Budget: Under $100m](budget_low_profit.md)
 
-# 🎶 Music Store  
+# Music Store
 *Your Passive-Earning, Bonus-Dropping Side Hustle*
 
 The **Music Store** thrives on minimal oversight. It's like an indie band with a cult following—quietly profitable, rarely demanding, and surprisingly cool to manage.
 
-## 🧠 Requirements
+## Requirements
 
 - **Recommended INT:** 100+ for optimal drop frequency  
 - **Staff:** 2–5 ideal (Sales Reps, Manual, or HR mix)  
 - **Setup Cost:** ~$60M–$80M  
 - **Upkeep:** Low to moderate (depends on staff fill rate)
 
-## 🧰 Suggested Setup
+## Suggested Setup
 
 | Priority       | Recommendation                        |
 |----------------|----------------------------------------|
@@ -20,7 +20,7 @@ The **Music Store** thrives on minimal oversight. It's like an indie band with a
 | 👥 Staff Roles  | Sales Reps + Manual for speed          |
 | 💽 Focus Perks  | Bonus items, passive income            |
 
-## 🎁 Job Specials
+## Job Specials
 
 | ⭐ | Name          | Type       | Cost       | Effect                         |
 |----|---------------|------------|------------|--------------------------------|
@@ -32,7 +32,7 @@ The **Music Store** thrives on minimal oversight. It's like an indie band with a
 
 💡 *This company is a stealth/gym powerhouse. Players often join briefly for "Well Tuned" at 3★, or long-term for PvP edge at 10★.*
 
-## 🎁 Perks Breakdown
+## Perks Breakdown
 
 | Perk                     | Effect                                   | Unlocks at           |
 |--------------------------|-------------------------------------------|-----------------------|
@@ -40,14 +40,14 @@ The **Music Store** thrives on minimal oversight. It's like an indie band with a
 | 💰 Increased Revenue     | Boost to daily passive income             | Mid-tier upgrades     |
 | 🎫 Coupon Generation     | Potential future perk (depends on meta)   | Not guaranteed        |
 
-## 📈 Tips for Success
+## Tips for Success
 
 - Fill staff early—bonuses scale with activity
 - Use job ads or faction posts to fill fast
 - Combine with faction job perks for optimal profit
 - Low stress even with 0 daily input
 
-## 🙋 Who Should Run This
+## Who Should Run This
 
 ✅ Casual or alt accounts  
 ✅ Bonus hunters  

@@ -1,87 +1,34 @@
-# 🧭 Which Company Is Right For You?
+# Torn Assistant: Decision Flow
 
-Answer a few quick questions and we’ll recommend the companies that best fit your playstyle, budget, and goals.
+Welcome! This is your starting point to figure out what kind of company fits your goals, playstyle, and budget.
 
----
-
-## 🎯 What’s your main motivation?
-
-- [ ] Passive income with low effort  
-- [ ] Boosting my gym stats  
-- [ ] Gaining a unique job special  
-- [ ] Progressing fast via education or hacking  
-- [ ] Roleplay / social fun
+Just answer a few questions and we’ll guide you to the right path.
 
 ---
 
-## 💰 What’s your starting budget?
+## What's Your Main Goal?
 
-- [ ] Under $100 million  
-- [ ] $100M–$500M  
-- [ ] Over $500M
+Choose one to get started:
 
----
-
-## 💼 How active do you want to be?
-
-- [ ] Passive / minimal micromanagement  
-- [ ] Somewhat involved  
-- [ ] Hands-on with staff roles and star progression
+- 💰 [I want to earn money](./goal_profit.md)
+- 🏋️ [I want to gain stats](./goal_stats.md)
+- 🎯 [I want perks, passives, or strategy](./goal_strategy.md)
+- 💬 [I want to work with friends or RP](./goal_social.md)
 
 ---
 
-## ⚙️ What perk appeals most?
+## Not Sure What a Job Special Is?
 
-- [ ] Energy regeneration  
-- [ ] Gym/stat boosts  
-- [ ] Intelligence/hacking perks  
-- [ ] Travel or vehicle efficiency  
-- [ ] Crime or revive synergy
+Most companies offer **Job Specials** — permanent perks you unlock by working long enough.
+
+🧠 Learn more in the [Job Special Guide](../company_profiles/job_specials.md)
 
 ---
 
-## 🎁 Want a job special?
+## Already Know What You Want?
 
-- [ ] Yes — must match my perk  
-- [ ] Yes — helpful even if unrelated  
-- [ ] Not important
+Jump to quick resources:
 
----
-
-Once the assistant module is wired up, users will click **[Get My Recommendations]** and it’ll call the script.
-
----
-
-### 🔁 2. `filters.yml`
-
-This maps user choices to tag filters (to match `companies.yaml` tags):
-
-```yaml
-budget:
-  Under $100 million: low_budget
-  $100M–$500M: mid_budget
-  Over $500M: high_budget
-
-motivation:
-  Passive income with low effort: passive_friendly
-  Boosting my gym stats: stat_boost
-  Gaining a unique job special: job_special
-  Progressing fast via education or hacking: edu_synergy
-  Roleplay / social fun: roleplay
-
-activity:
-  Passive / minimal micromanagement: staff_light
-  Somewhat involved: moderate_staffing
-  Hands-on: staff_heavy
-
-perks:
-  Energy regeneration: energy_gain
-  Gym/stat boosts: gym_synergy
-  Intelligence/hacking perks: hacking_ready
-  Travel or vehicle efficiency: travel_synergy
-  Crime or revive synergy: crime_helper
-
-job_special:
-  Yes — must match my perk: job_special_supports_perk
-  Yes — helpful even if unrelated: has_job_special
-  Not important: no_job_special
+- 📂 [All Companies A–Z](../company_profiles/index.md)
+- 🗺️ [Compare by Goal](../output/recommendations.md)
+- 🧾 [How to Earn Money for a Company](./budget_advice.md)

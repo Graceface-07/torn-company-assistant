@@ -1,4 +1,4 @@
-# 📊 Company Performance Review
+# Company Performance Review
 
 Welcome to your **advanced company insights dashboard** — powered by live Torn API data, loyalty logic, and hidden mechanic detection.
 
@@ -6,7 +6,7 @@ Welcome to your **advanced company insights dashboard** — powered by live Torn
 
 ---
 
-## 🔍 Company Snapshot
+## Company Snapshot
 
 - **Company Name:** *(to be filled with JS)*
 - **Type:** *(mapped from `company_type`)*

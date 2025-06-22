@@ -5,19 +5,19 @@ budget:
 
 motivation:
   Passive income with low effort: passive_friendly
-  Boosting my gym stats: stat_boost
-  Gaining a unique job special: job_special
+  Boosting my gym stats: gym_synergy
+  Gaining a unique job special: utility_perk
   Progressing fast via education or hacking: edu_synergy
-  Roleplay / social fun: roleplay
+  Roleplay / social fun: travel_synergy
 
 activity:
-  Passive / minimal micromanagement: staff_light
-  Somewhat involved: moderate_staffing
-  Hands-on with staff roles and star progression: staff_heavy
+  Passive / minimal micromanagement: beginner_friendly
+  Somewhat involved: active_grinder
+  Hands-on with staff roles and star progression: staff_light
 
 perks:
   Energy regeneration: energy_gain
-  Gym/stat boosts: gym_synergy
+  Gym/stat boosts: stat_boost
   Intelligence/hacking perks: hacking_ready
   Travel or vehicle efficiency: travel_synergy
   Crime or revive synergy: crime_helper

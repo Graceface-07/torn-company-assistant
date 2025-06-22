@@ -1,12 +1,12 @@
 [🏠 Return to Main Menu](main_menu.md)
 
-# 📨 Join a Company
+# Join a Company
 
 Whether you're new to the game or between jobs, this guide helps you find and join the right company for your goals.
 
 ---
 
-## 🔎 Step 1: Search for Open Companies
+## Step 1: Search for Open Companies
 
 ???+ tip "💼 Where to look"
     - **Torn Job Market**: Visit [Companies → Job Listings](https://www.torn.com/companies.php)
@@ -16,7 +16,7 @@ Whether you're new to the game or between jobs, this guide helps you find and jo
 
 ---
 
-## 🤔 Step 2: What to Look For
+## Step 2: What to Look For
 
 ???+ info "🧩 Key factors to consider"
     - **Company Type**: What perks/stats does it train or boost?
@@ -27,7 +27,7 @@ Whether you're new to the game or between jobs, this guide helps you find and jo
 
 ---
 
-## 💡 Step 3: Match to Your Playstyle
+## Step 3: Match to Your Playstyle
 
 ???+ success "📚 If you're in learning mode"
     - Look for: Sweet Shop, Music Store, Restaurant  
@@ -47,7 +47,7 @@ Whether you're new to the game or between jobs, this guide helps you find and jo
 
 ---
 
-## 🧾 Step 4: Apply or Reach Out
+## Step 4: Apply or Reach Out
 
 ???+ example "📝 Options to join"
     - **Apply directly** through the company’s page  
@@ -56,7 +56,7 @@ Whether you're new to the game or between jobs, this guide helps you find and jo
 
 ---
 
-## 🛡️ Step 5: Red Flags to Avoid
+## Step 5: Red Flags to Avoid
 
 ???+ warning "🚩 Watch out for..."
     - Companies with zero perks or no upgrades  

@@ -1,4 +1,4 @@
-# 🔐 Connect Your Torn API Key
+# Connect Your Torn API Key
 
 Enter your API key below so the assistant can personalize its recommendations.
 
@@ -12,7 +12,7 @@ Enter your API key below so the assistant can personalize its recommendations.
 
 ---
 
-## 👤 Preview Your Torn Profile
+## Preview Your Torn Profile
 
 <div id="torn-info"></div>
 

@@ -1,11 +1,11 @@
 [⬅️ Back to Step 2: Profit Budget](goal_profit.md)
 
-# 💎 Budget: $500m+  
+# Budget: $500m+
 You've got serious capital—and the doors to Torn’s most elite companies swing wide open. These giants offer prestige, maximum perks, and the kind of scaling power that makes empires.
 
 ---
 
-## ✅ Recommended Companies
+## Recommended Companies
 
 Click through for advanced setups, optimal staffing, and warning signs:
 

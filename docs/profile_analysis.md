@@ -1,13 +1,13 @@
 [🏠 Return to Main Menu](main_menu.md)
 
-# 🧬 Analyze My Profile
+# Analyze My Profile
 
 > This page matches you to the *best company types* based on your stats, play style, budget, and goals.  
 > If you've loaded your API key, the assistant will use real data. Otherwise, you can browse manually below.
 
 ---
 
-## 📊 Stat-Based Recommendations
+## Stat-Based Recommendations
 
 ???+ success "💪 Strength Under 100"
     - **Try:** Sweet Shop, Music Store, News Stand  
@@ -26,7 +26,7 @@
 
 ---
 
-## 💰 Budget-Based Paths
+## Budget-Based Paths
 
 ???+ info "💰 Choose your spending tier"
     **Under $100m**
@@ -42,7 +42,7 @@
 
 ---
 
-## 👤 Play Style Match
+## Play Style Match
 
 ???+ example "🎮 Your style, your path"
     - **Solo / Low Staff:** Sweet Shop, Music Store, Firework Stand  
@@ -56,7 +56,7 @@
 
 ---
 
-## 🔓 Connected Profile (If API Key Loaded)
+## Connected Profile (If API Key Loaded)
 
 ???+ tip "See your personalized suggestions"
     - [✔️ Start or Buy a Company](start_or_buy.md) → Uses your real stats

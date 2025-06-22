@@ -4,14 +4,14 @@
 
 **Job Special:** None ❌
 
-## 🌟 Perks
+## Perks
 - Large staff, scalable profit
 - Moderate revenue at larger sizes
 
-## 🔗 Synergy Notes
+## Synergy Notes
 - Works well for volume-based management strategies
 
-## 🏷 Tags
+## Tags
 - `profit`
 - `scaling`
 - `no_job_specials`

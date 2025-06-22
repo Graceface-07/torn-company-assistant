@@ -4,13 +4,13 @@
 
 **Job Special:** Reduces time to learn hacking
 
-## 🌟 Perks
+## Perks
 - Strategically important for hacking missions
 
-## 🔗 Synergy Notes
+## Synergy Notes
 - Combines well with Education and Crime perks
 
-## 🏷 Tags
+## Tags
 - `job_specials`
 - `intelligence`
 - `perk_synergy`

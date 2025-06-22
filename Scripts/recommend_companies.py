@@ -1,33 +1,53 @@
+import sys
+import io
 import yaml
 
-def load_yaml(path):
-    with open(path, 'r') as f:
+# Ensure UTF-8 output for emoji compatibility
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
+COMPANIES_FILE = 'data/companies.yaml'
+
+def load_companies():
+    with open(COMPANIES_FILE, encoding='utf-8') as f:
         return yaml.safe_load(f)
 
-def filter_companies(companies, filters):
-    return [
-        c for c in companies
-        if all(tag in c['tags'] for tag in filters)
-    ]
+def generate_company_anchor(name):
+    return name.lower().replace(' ', '-')
 
-if __name__ == "__main__":
-    answers = {
-        'budget': 'Under $100 million',
-        'motivation': 'Boosting my gym stats',
-        'activity': 'Somewhat involved',
-        'perks': 'Gym/stat boosts',
-        'job_special': 'Yes — must match my perk'
+def generate_company_link(company):
+    name = company['name']
+    emoji = company.get('emoji', '🏢')
+    anchor = generate_company_anchor(name)
+    return f"✅ [{emoji} {name}](../company_profiles/index.md#{anchor})"
+
+def recommend_by_goal(companies, goal_tag):
+    return sorted(
+        [c for c in companies if goal_tag in c.get('tags', [])],
+        key=lambda c: c['name']
+    )
+
+def main():
+    companies = load_companies()
+
+    print("# 🎯 Company Recommendations by Goal\n")
+
+    goals = {
+        'Profit-Focused': 'profit_friendly',
+        'Stat-Gain Focused': 'gym_synergy',
+        'Energy-Hungry Builds': 'energy_gain',
+        'Brainy / Hacker Builds': 'edu_synergy',
+        'Passive Income': 'passive_friendly'
     }
 
-    # Load filter mappings
-    tag_map = load_yaml('filters.yml')
-    selected_tags = [
-        tag_map[q][a]
-        for q, a in answers.items()
-    ]
+    for goal_name, tag in goals.items():
+        print(f"\n## 🔹 {goal_name}\n")
+        matched = recommend_by_goal(companies, tag)
 
-    companies = load_yaml('companies.yaml')
-    matched = filter_companies(companies, selected_tags)
+        if not matched:
+            print("_No companies matched this goal yet._")
+        else:
+            for company in matched:
+                print(generate_company_link(company))
 
-    for c in matched:
-        print(f"✅ {c['name']} — {c.get('job_special') or 'No job special'}")
+if __name__ == '__main__':
+    main()

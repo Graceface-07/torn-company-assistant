@@ -4,13 +4,13 @@
 
 **Job Special:** Improves passive stat gain from gym
 
-## 🌟 Perks
+## Perks
 - Increases gym training effectiveness
 
-## 🔗 Synergy Notes
+## Synergy Notes
 - Synergizes with Strength-based builds
 
-## 🏷 Tags
+## Tags
 - `stats`
 - `strength`
 - `perk_synergy`

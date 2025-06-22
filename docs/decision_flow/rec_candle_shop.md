@@ -1,18 +1,18 @@
 ﻿[⬅️ Back to Budget: $100m – $500m](budget_mid_profit.md)
 
-# 🕯️ Candle Shop  
+# Candle Shop
 *Subtle perks, serenity, and steady utility*
 
 The Candle Shop is perfect for players who like passive perks and cooldown synergy without the pressure of hardcore stat min-maxing. It’s low-stress, high-harmony... and surprisingly effective when paired with awareness or drug cooldown builds.
 
-## 🧠 Requirements
+## Requirements
 
 - **Recommended INT:** 100–200  
 - **Staff:** 5–10  
 - **Setup Cost:** ~$120M–$160M  
 - **Upkeep:** Low
 
-## 🧰 Suggested Setup
+## Suggested Setup
 
 | Priority        | Recommendation                           |
 |------------------|-------------------------------------------|
@@ -20,7 +20,7 @@ The Candle Shop is perfect for players who like passive perks and cooldown syner
 | 👥 Staff Roles    | Clerk (manual), Sales, Manager            |
 | 🔩 Focus Perks    | Drug cooldown reduction, passive awareness|
 
-## 🎁 Perks Breakdown
+## Perks Breakdown
 
 | Perk                      | Effect                           | Unlocks at        |
 |---------------------------|-----------------------------------|--------------------|
@@ -28,7 +28,7 @@ The Candle Shop is perfect for players who like passive perks and cooldown syner
 | 🧠 Awareness Buff          | Slight passive increase           | Higher star level  |
 | 😊 Mood Regulation         | Boost to happy regen over time    | Passive at 5★+     |
 
-## 🎁 Job Specials
+## Job Specials
 
 | ⭐ | Name                | Type       | Cost       | Effect                            |
 |----|---------------------|------------|------------|------------------------------------|
@@ -40,10 +40,10 @@ The Candle Shop is perfect for players who like passive perks and cooldown syner
 
 💡 *Solid for players running addiction-heavy playstyles or chaining with awareness-sensitive builds. Works well with education/stocks that boost stealth.*
 
-## 📈 Tips for Success
+## Tips for Success
 
 - Consider pairing with Xanax training or Awareness education  
 - Recruit Sales roles early for steady income  
 - Flame Control is niche but useful during organized busting or PvP setups  
 
-## 🙋 Who Should
+## Who Should

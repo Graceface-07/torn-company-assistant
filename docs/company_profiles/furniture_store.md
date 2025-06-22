@@ -4,12 +4,12 @@
 
 **Job Special:** None ❌
 
-## 🌟 Perks
+## Perks
 - Steady income, low fluctuation
 
-## 🔗 Synergy Notes
+## Synergy Notes
 - Good early ownership training
 
-## 🏷 Tags
+## Tags
 - `low_risk`
 - `beginner_friendly`

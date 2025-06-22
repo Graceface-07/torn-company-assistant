@@ -1,11 +1,11 @@
 [⬅️ Back to Step 2: Profit Budget](goal_profit.md)
 
-# 🏗️ Budget: $100m – $500m  
+# Budget: $100m – $500m
 You’re serious about scaling but not blowing your full bankroll. Great! This budget range unlocks high-performance companies that return profit and perks without demanding premium-tier investments.
 
 ---
 
-## ✅ Recommended Companies
+## Recommended Companies
 
 Click through for tailored advice on each one:
 

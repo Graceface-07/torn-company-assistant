@@ -1,10 +1,10 @@
-# 🚧 Torn Company Assistant — Roadmap
+# Torn Company Assistant — Roadmap
 
 This roadmap outlines the planned features, current priorities, and long-term vision for the Torn Company Assistant.
 
 ---
 
-## ✅ Completed
+## Completed
 
 - Core company analysis via Torn API
 - Loyalty-based perk tips by company type
@@ -13,7 +13,7 @@ This roadmap outlines the planned features, current priorities, and long-term vi
 
 ---
 
-## 🛠 In Progress
+## In Progress
 
 - `performance_review.md` → audit dashboard
 - Role-to-stat match analysis
@@ -23,7 +23,7 @@ This roadmap outlines the planned features, current priorities, and long-term vi
 
 ---
 
-## 🔜 Planned
+## Planned
 
 - Stat-based company recommendation engine
 - Staff effectiveness predictor
@@ -34,7 +34,7 @@ This roadmap outlines the planned features, current priorities, and long-term vi
 
 ---
 
-## 🌟 Stretch Goals
+## Stretch Goals
 
 - Perk simulator (drag-and-drop loyalty planner)
 - Company perks visualization by tier
@@ -45,7 +45,7 @@ This roadmap outlines the planned features, current priorities, and long-term vi
 
 ---
 
-## 💬 Got Ideas?
+## Got Ideas?
 
 Open a GitHub Issue or PR! We especially welcome:
 - New insight logic per company type

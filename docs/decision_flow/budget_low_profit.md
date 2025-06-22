@@ -1,9 +1,9 @@
 [⬅️ Back to Step 2: Profit Budget](goal_profit.md)
 
-# 💼 Budget: Under $100m  
+# Budget: Under $100m
 You're working with a modest startup fund—perfect for launching a light but profitable business.
 
-## ✅ Recommended Companies
+## Recommended Companies
 
 Choose one to see setup advice, perks, and who it suits best:
 

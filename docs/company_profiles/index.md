@@ -1,34 +1,212 @@
-# 🏢 Company Info Overview
+# Company Profiles (A–Z)
 
-Welcome to the **Company Info** hub of the Torn Company Assistant. This section gives you a detailed look at each company type—whether you're browsing for profit, perks, or long-term strategy.
+Welcome! Explore every company currently supported by the Torn Assistant.
 
----
+## Browse Alphabetically
 
-## 🔍 What You’ll Find Here
-
-Each company profile includes:
-
-- ✅ **Perks**: What makes this company valuable to own or work in
-- ⭐ **Job Specials**: Unique bonuses available to employees (if any)
-- 🧠 **Synergy Notes**: How the company fits into broader player goals
-- 🏷 **Tags**: Budget level, strategic focus, and more
-
----
-
-## 📘 Browse Companies
-
-Use the sidebar to explore individual companies like:
-
-- **Mechanic** – Great for travel-heavy players with a job special that reduces vehicle repair time  
-- **Sweet Shop** – High-profit, low-maintenance, but no job special  
-- **TV Station** – Boosts gym stat gains and supports strength builds
+- [🏢 Furniture Store](#furniture-store)
+- [🏢 Game Development](#game-development)
+- [🏢 Mechanic](#mechanic)
+- [🏢 Music Store](#music-store)
+- [🏢 Restaurant](#restaurant)
+- [🏢 Software Corporation](#software-corporation)
+- [🏢 Sweet Shop](#sweet-shop)
+- [🏢 TV Station](#tv-station)
 
 ---
 
-## 🧭 Not Sure Where to Start?
+## Browse by Category
 
-Head to the [Decision Flow](../decision_flow/start_or_buy.md) to answer a few questions and get a tailored recommendation based on your goals.
+### Passive-Friendly
+- 🏢 Furniture Store
+- 🏢 Mechanic
+- 🏢 Restaurant
+- 🏢 Sweet Shop
+
+### Energy or Stat-Focused
+- 🏢 Music Store
+- 🏢 TV Station
+
+### Strategic / Perk-Based
+- 🏢 Software Corporation
 
 ---
 
-Want to suggest a new company or update a profile? [Submit feedback](https://github.com/Graceface-07/torn-company-assistant/issues) and help us improve the assistant for everyone.
+## Company Details
+
+### Furniture Store <a name="furniture-store"></a>
+<details>
+<summary>View Profile</summary>
+
+**Budget Tier**: Unknown
+  
+**Tags**: low_budget, staff_light, no_job_special, passive_friendly
+  
+**Job Special**: None
+  
+**Best For**: TBD
+
+**Pros**:
+- TBD
+
+**Cons**:
+- TBD
+
+</details>
+
+---
+
+### Game Development <a name="game-development"></a>
+<details>
+<summary>View Profile</summary>
+
+**Budget Tier**: Unknown
+  
+**Tags**: no_tag_info
+  
+**Job Special**: Reduces education time
+  
+**Best For**: TBD
+
+**Pros**:
+- TBD
+
+**Cons**:
+- TBD
+
+</details>
+
+---
+
+### Mechanic <a name="mechanic"></a>
+<details>
+<summary>View Profile</summary>
+
+**Budget Tier**: Unknown
+  
+**Tags**: low_budget, travel_synergy, passive_friendly, utility_perk, job_special_supports_perk
+  
+**Job Special**: Reduces vehicle repair time
+  
+**Best For**: TBD
+
+**Pros**:
+- TBD
+
+**Cons**:
+- TBD
+
+</details>
+
+---
+
+### Music Store <a name="music-store"></a>
+<details>
+<summary>View Profile</summary>
+
+**Budget Tier**: Unknown
+  
+**Tags**: mid_budget, energy_gain, active_grinder, job_special_supports_perk
+  
+**Job Special**: Reduces energy refill cooldown
+  
+**Best For**: TBD
+
+**Pros**:
+- TBD
+
+**Cons**:
+- TBD
+
+</details>
+
+---
+
+### Restaurant <a name="restaurant"></a>
+<details>
+<summary>View Profile</summary>
+
+**Budget Tier**: Unknown
+  
+**Tags**: low_budget, beginner_friendly, passive_friendly, no_job_special
+  
+**Job Special**: None
+  
+**Best For**: TBD
+
+**Pros**:
+- TBD
+
+**Cons**:
+- TBD
+
+</details>
+
+---
+
+### Software Corporation <a name="software-corporation"></a>
+<details>
+<summary>View Profile</summary>
+
+**Budget Tier**: Unknown
+  
+**Tags**: high_budget, hacking_ready, edu_synergy, crime_helper, job_special_supports_perk
+  
+**Job Special**: Improves hacking success
+  
+**Best For**: TBD
+
+**Pros**:
+- TBD
+
+**Cons**:
+- TBD
+
+</details>
+
+---
+
+### Sweet Shop <a name="sweet-shop"></a>
+<details>
+<summary>View Profile</summary>
+
+**Budget Tier**: Unknown
+  
+**Tags**: low_budget, passive_friendly, staff_light, no_job_special
+  
+**Job Special**: None
+  
+**Best For**: TBD
+
+**Pros**:
+- TBD
+
+**Cons**:
+- TBD
+
+</details>
+
+---
+
+### TV Station <a name="tv-station"></a>
+<details>
+<summary>View Profile</summary>
+
+**Budget Tier**: Unknown
+  
+**Tags**: mid_budget, stat_boost, gym_synergy, job_special_supports_perk
+  
+**Job Special**: Increased strength gym gains
+  
+**Best For**: TBD
+
+**Pros**:
+- TBD
+
+**Cons**:
+- TBD
+
+</details>
+
+---
+

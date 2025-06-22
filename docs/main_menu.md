@@ -1,10 +1,10 @@
-# 🤖 Torn Company Assistant
+# Torn Company Assistant
 
 Welcome, Commander. Choose what you'd like help with:
 
 ---
 
-## 🧭 Navigation & Planning
+## Navigation & Planning
 
 - [🧬 Analyze My Profile](profile_analysis.md)  
  Tailored company suggestions based on your stats, goals, and play style
@@ -20,7 +20,7 @@ Welcome, Commander. Choose what you'd like help with:
 
 ---
 
-## 🛠️ Tools & Insights
+## Tools & Insights
 
 - [📚 Company Profiles](company_profiles.md)  
  A full breakdown of all company types—perks, staff caps, upgrade costs, and more

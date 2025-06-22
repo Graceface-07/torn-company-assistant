@@ -1,18 +1,18 @@
 [⬅️ Back to Budget: $500m+](budget_high_profit.md)
 
-# ✈️ Airline  
+# Airline
 *High-stakes, high-reward, and built for faction synergy*
 
 The **Airline** company is Torn’s most logistically complex business—but also one of the most rewarding. With the right setup, it becomes a faction-wide engine for travel perks, passive income, and long-term dominance.
 
-## 🧠 Requirements
+## Requirements
 
 - **Recommended INT:** 500+  
 - **Staff:** 20–40  
 - **Setup Cost:** ~$800M–$1.2B  
 - **Upkeep:** Very high (especially with full routes)
 
-## 🧰 Suggested Setup
+## Suggested Setup
 
 | Priority        | Recommendation                                  |
 |------------------|--------------------------------------------------|
@@ -20,7 +20,7 @@ The **Airline** company is Torn’s most logistically complex business—but als
 | 👥 Staff Roles    | Pilots, Flight Crew, HR, Logistics                |
 | 🛫 Focus Perks    | Travel time reduction, energy regen, revenue     |
 
-## 🎁 Perks Breakdown
+## Perks Breakdown
 
 | Perk                         | Effect                                 | Unlocks at               |
 |------------------------------|-----------------------------------------|---------------------------|
@@ -28,14 +28,14 @@ The **Airline** company is Torn’s most logistically complex business—but als
 | ⚡ Energy Boost (minor)      | +1–2 energy daily                       | Loyalty + upgrades        |
 | 💼 Faction Travel Perks      | Shared benefits for faction members     | Requires coordination     |
 
-## 📈 Tips for Success
+## Tips for Success
 
 - Best run with faction support—benefits scale with group use  
 - Requires active management of routes and staff  
 - Can be a prestige symbol and perk engine in one  
 - Not ideal for solo players or low-activity accounts
 
-## 🙋 Who Should Run This
+## Who Should Run This
 
 ✅ Faction leaders or travel-heavy mains  
 ✅ Players with time and capital to manage complexity  

@@ -4,13 +4,13 @@
 
 **Job Special:** Reduces education time
 
-## 🌟 Perks
+## Perks
 - Good for education-oriented players
 
-## 🔗 Synergy Notes
+## Synergy Notes
 - Enables fast access to high-tier courses
 
-## 🏷 Tags
+## Tags
 - `perks`
 - `education`
 - `moderate_budget`

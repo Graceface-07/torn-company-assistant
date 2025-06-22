@@ -4,13 +4,13 @@
 
 **Job Special:** None ❌
 
-## 🌟 Perks
+## Perks
 - High profit-to-staff ratio
 - Low management complexity
 
-## 🔗 Synergy Notes
+## Synergy Notes
 - Ideal for passive investors
 
-## 🏷 Tags
+## Tags
 - `profit`
 - `low_budget`
