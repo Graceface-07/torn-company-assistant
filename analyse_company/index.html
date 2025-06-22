@@ -63,11 +63,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#analyze-my-company-live-api-key" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -653,21 +648,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Analyze Company
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -680,34 +660,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#company-snapshot" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧰 Company Snapshot
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -827,25 +779,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#company-snapshot" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧰 Company Snapshot
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -861,71 +794,50 @@
 
 
 
-<h1 id="analyze-my-company-live-api-key">🕵️ Analyze My Company (Live API Key)</h1>
-<p>This tool connects directly to Torn’s API using your company-enabled key to provide real-time analysis.</p>
-<blockquote>
-<p>🛡️ Your API key is embedded directly. Only use this for personal/private versions of your site.</p>
-</blockquote>
-<hr />
-<h2 id="company-snapshot">🧰 Company Snapshot</h2>
-<div id="company-info">
-  <p>Fetching company details...</p>
-</div>
+  <h1>Analyze Company</h1>
+
+<h2>🏢 Analyze My Company</h2>
+<p><button onclick="analyzeCompany()">🔍 Analyze</button></p>
+<div id="company-result" style="margin-top:10px;"></div>
 
 <script>
-  const API_KEY = "NVMCjgpq86wpcPCF"; // ✅ Your validated key with company access
+function analyzeCompany() {
+  const key = localStorage.getItem("torn_api_key");
+  const resultDiv = document.getElementById("company-result");
 
-  fetch(`https://api.torn.com/company/?selections=profile,basic&key=${API_KEY}`)
+  if (!key) {
+    resultDiv.innerHTML = "<p style='color:red;'>❌ No API key found. Please enter one first.</p>";
+    return;
+  }
+
+  fetch(`https://api.torn.com/company/?key=${key}`)
     .then(res => res.json())
     .then(data => {
-      if (!data.company_profile) {
-        document.getElementById("company-info").innerHTML =
-          "<p style='color:red;'>❌ Key is valid, but company data is unavailable. Double-check Torn access settings.</p>";
+      if (data.error) {
+        resultDiv.innerHTML = `<p style='color:red;'>❌ API Error: ${data.error.error}</p>`;
         return;
       }
 
-      const company = data.company_profile;
-      const staffList = Object.values(data.company_employees || {});
-      const staffCount = staffList.length;
-      const avgLoyalty = staffCount
-        ? (staffList.reduce((sum, e) => sum + e.days_in_company, 0) / staffCount).toFixed(1)
-        : 0;
-
-      document.getElementById("company-info").innerHTML = `
-        <p><strong>📛 Name:</strong> ${company.name}</p>
-        <p><strong>🏢 Type:</strong> ${company.type}</p>
-        <p><strong>📈 Tier:</strong> ${company.upgrade}</p>
-        <p><strong>👥 Staff Count:</strong> ${staffCount}</p>
-        <p><strong>📅 Avg Loyalty:</strong> ${avgLoyalty} days</p>
-        <p><strong>💡 Insight:</strong> ${generateInsight(company.type, avgLoyalty)}</p>
-      `;
+      if (data.company && data.company.name) {
+        const c = data.company;
+        resultDiv.innerHTML = `
+          <p style='color:green;'>✅ <strong>${c.name}</strong> loaded successfully!</p>
+          <ul>
+            <li>🏢 Company ID: ${c.ID}</li>
+            <li>🧠 Type: ${c.company_type}</li>
+            <li>⭐ Rating: ${c.rating}</li>
+            <li>💼 Employees: ${c.employees_hired} / ${c.employees_capacity}</li>
+            <li>📈 Weekly Income: \$${c.weekly_income.toLocaleString()}</li>
+          </ul>
+        `;
+      } else {
+        resultDiv.innerHTML = `<p style='color:orange;'>❓ Key is valid, but no company data returned.<br>Check if you're in a company and that the API key has <strong>Company</strong> permission.</p>`;
+      }
     })
     .catch(err => {
-      document.getElementById("company-info").innerHTML =
-        `<p style='color:red;'>❌ Error fetching data: ${err.message}</p>`;
+      resultDiv.innerHTML = `<p style='color:red;'>❌ Fetch error: ${err.message}</p>`;
     });
-
-  function generateInsight(type, loyaltyStr) {
-    const loyalty = parseFloat(loyaltyStr);
-    const tips = {
-      "Sweet Shop": loyalty >= 30
-        ? "✅ Candy drops likely active—maintain staff loyalty to keep them flowing."
-        : "🍬 Boost loyalty past 30 days to activate candy perks.",
-      "Farm": loyalty >= 40
-        ? "🌾 Happiness and energy bonuses active—expand if needed."
-        : "🌱 Build to 40+ day loyalty for steady passive perks.",
-      "Music Store": loyalty >= 35
-        ? "🎶 Item drops probably online—check your item log."
-        : "📈 Push loyalty over 35 days to trigger perks.",
-      "Software Corporation": loyalty >= 50
-        ? "💻 Energy regen and cooldown perks should now be live."
-        : "👷 Steady loyalty growth unlocks passive scaling.",
-      "TV Station": loyalty >= 45
-        ? "📺 Crime XP likely enabled—perfect for faction synergy."
-        : "📰 Loyalty grind → top-tier XP and regen boosts."
-    };
-    return tips[type] || "🛠 No tailored insight for this company type yet—want to help me add it?";
-  }
+}
 </script>
 
 
