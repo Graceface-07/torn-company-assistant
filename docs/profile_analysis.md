@@ -60,6 +60,6 @@
 
 ???+ tip "See your personalized suggestions"
     - [✔️ Start or Buy a Company](start_or_buy.md) → Uses your real stats
-    - [🔬 Analyze My Company](analyze_company.md) → Breakdown based on live ownership
+    - [🔬 Analyze My Company](analyse_company.md) → Breakdown based on live ownership
 
 If not connected yet, go to → [🔑 Load API Key](load_profile.md)

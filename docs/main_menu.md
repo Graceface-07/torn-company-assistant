@@ -15,7 +15,7 @@ Welcome, Commander. Choose what you'd like help with:
 - [📨 Join a Company](join_company.md)  
  See how to apply, what to look for, and how to find the best team
 
-- [🔬 Analyze My Company](analyze_company.md)  
+- [🔬 Analyze My Company](analyse_company.md)  
  Break down profits, perks, upgrades, and staff needs for any company you own
 
 ---
