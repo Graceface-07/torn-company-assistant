@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://Graceface-07.github.io/torn-company-assistant/analyse_company/">
       
       
-        <link rel="prev" href="../load_profile/">
+        <link rel="prev" href="../performance_review/">
       
       
         <link rel="next" href="../join_company/">
@@ -212,6 +212,50 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ROADMAP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Roadmap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -221,10 +265,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -237,8 +281,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Decision Flow
           </label>
@@ -519,10 +563,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -535,8 +579,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Profile Tools
           </label>
@@ -588,6 +632,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../performance_review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Performance Review
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -612,10 +679,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -628,8 +695,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Company Tools
           </label>
@@ -718,50 +785,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ROADMAP.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Roadmap
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../README.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    About
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -797,16 +820,15 @@
   <h1>Analyze Company</h1>
 
 <h2>🏢 Analyze My Company</h2>
-<p><button onclick="analyzeCompany()">🔍 Analyze</button></p>
-<div id="company-result" style="margin-top:10px;"></div>
+<p><button onclick="analyzeCompany()" style="padding:6px 12px;">🔍 Analyze</button></p>
+<div id="company-result" style="margin-top:15px; font-family: sans-serif;"></div>
 
 <script>
 function analyzeCompany() {
   const key = localStorage.getItem("torn_api_key");
-  const resultDiv = document.getElementById("company-result");
-
+  const div = document.getElementById("company-result");
   if (!key) {
-    resultDiv.innerHTML = "<p style='color:red;'>❌ No API key found. Please enter one first.</p>";
+    div.innerHTML = "<p style='color:red;'>❌ No API key found. Please enter or save one first.</p>";
     return;
   }
 
@@ -814,28 +836,65 @@ function analyzeCompany() {
     .then(res => res.json())
     .then(data => {
       if (data.error) {
-        resultDiv.innerHTML = `<p style='color:red;'>❌ API Error: ${data.error.error}</p>`;
+        div.innerHTML = `<p style='color:red;'>❌ API Error: ${data.error.error}</p>`;
         return;
       }
 
-      if (data.company && data.company.name) {
-        const c = data.company;
-        resultDiv.innerHTML = `
-          <p style='color:green;'>✅ <strong>${c.name}</strong> loaded successfully!</p>
-          <ul>
-            <li>🏢 Company ID: ${c.ID}</li>
-            <li>🧠 Type: ${c.company_type}</li>
-            <li>⭐ Rating: ${c.rating}</li>
-            <li>💼 Employees: ${c.employees_hired} / ${c.employees_capacity}</li>
-            <li>📈 Weekly Income: \$${c.weekly_income.toLocaleString()}</li>
-          </ul>
-        `;
-      } else {
-        resultDiv.innerHTML = `<p style='color:orange;'>❓ Key is valid, but no company data returned.<br>Check if you're in a company and that the API key has <strong>Company</strong> permission.</p>`;
+      if (!data.company || !data.company.name) {
+        div.innerHTML = `<p style='color:orange;'>❓ Key is valid, but no company data returned.<br>Make sure you're in a company and your API key has <strong>Company</strong> permission.</p>`;
+        return;
       }
+
+      const c = data.company;
+      const revenuePer = Math.round(c.weekly_income / c.employees_hired || 1).toLocaleString();
+
+      let html = `
+        <p style="color:green; font-weight:bold;">✅ Loaded: ${c.name}</p>
+        <ul>
+          <li>🏢 ID: ${c.ID}</li>
+          <li>🏷️ Type: ${c.company_type}</li>
+          <li>⭐ Rating: ${c.rating} stars</li>
+          <li>👥 Staffed: ${c.employees_hired} / ${c.employees_capacity}</li>
+          <li>📈 Weekly Income: \$${c.weekly_income.toLocaleString()} (${revenuePer} per employee)</li>
+          <li>📅 Days Old: ${c.days_old}</li>
+        </ul>
+      `;
+
+      html += `<h3>👤 Employees (${Object.keys(c.employees).length})</h3>`;
+      html += `<table border="1" cellpadding="6" style="border-collapse: collapse;">
+        <tr><th>Name</th><th>Role</th><th>Days</th><th>Status</th></tr>`;
+
+      for (const id in c.employees) {
+        const e = c.employees[id];
+        const status = e.status.state === "Hospital" || e.status.state === "Traveling"
+          ? `<span style="color:orange;">${e.status.description}</span>`
+          : `<span style="color:green;">${e.status.description}</span>`;
+
+        html += `<tr>
+          <td>${e.name}</td>
+          <td>${e.position}</td>
+          <td>${e.days_in_company}</td>
+          <td>${status}</td>
+        </tr>`;
+      }
+
+      html += `</table><br>`;
+
+      // Quick suggestion logic based on roles
+      const roles = Object.values(c.employees).map(e => e.position);
+      const totalDrivers = roles.filter(r => r.toLowerCase().includes("driver")).length;
+      const totalManagers = roles.filter(r => r.toLowerCase().includes("manager")).length;
+
+      html += `<h4>🧠 Suggestions</h4><ul>`;
+      if (totalDrivers < 3) html += `<li>🚛 Consider hiring more Drivers to optimize transport speed.</li>`;
+      if (totalManagers < 2) html += `<li>📊 Add a second manager to keep efficiency high.</li>`;
+      if (c.employees_hired === c.employees_capacity) html += `<li>👥 Your staff capacity is maxed—consider upgrading for growth.</li>`;
+      html += `</ul>`;
+
+      div.innerHTML = html;
     })
     .catch(err => {
-      resultDiv.innerHTML = `<p style='color:red;'>❌ Fetch error: ${err.message}</p>`;
+      div.innerHTML = `<p style="color:red;">❌ Fetch error: ${err.message}</p>`;
     });
 }
 </script>
