@@ -6,7 +6,6 @@ theme:
 
 nav:
   - Home: main_menu.md
-  - Overview: README.md
   - Roadmap: ROADMAP.md
   - Decision Flow:
       - Should I Start or Buy a Company?: start_or_buy.md
@@ -21,6 +20,17 @@ nav:
       - Software Corp Recommendation: decision_flow/rec_software_corp.md
       - TV Station Recommendation: decision_flow/rec_tv_station.md
 
+  - Company Info:
+      - Farm: company_profiles/farm.md
+      - Furniture Store: company_profiles/furniture_store.md
+      - Game Development: company_profiles/game_development.md
+      - Mechanic: company_profiles/mechanic.md
+      - Music Store: company_profiles/music_store.md
+      - Restaurant: company_profiles/restaurant.md
+      - Software Corporation: company_profiles/software_corporation.md
+      - Sweet Shop: company_profiles/sweet_shop.md
+      - TV Station: company_profiles/tv_station.md
+
   - Profile Tools:
       - Analyze Profile: profile_analysis.md
       - Load API Key: load_profile.md
@@ -31,9 +41,6 @@ nav:
       - Join a Company: join_company.md
 
   - API Setup: connect_api.md
-
-  
-
 
 markdown_extensions:
   - admonition

@@ -1,0 +1,128 @@
+- name: Mechanic
+  category: Service
+  has_job_special: true
+  job_special: "Reduces vehicle repair time"
+  job_special_type: "utility_travel"
+  job_special_synergy: true
+  perks:
+    - Faster car queue handling
+    - Reliable passive income
+  synergy_notes:
+    - Great for travel-heavy players
+  tags:
+    - low_budget
+    - travel_synergy
+    - passive_friendly
+    - utility_perk
+    - job_special_supports_perk
+
+- name: Music Store
+  category: Retail
+  has_job_special: true
+  job_special: "Reduces energy refill cooldown"
+  job_special_type: "energy_gain"
+  job_special_synergy: true
+  perks:
+    - Moderate profit
+    - Energy regen increase
+  synergy_notes:
+    - Ideal for training/grinding builds
+  tags:
+    - mid_budget
+    - energy_gain
+    - active_grinder
+    - job_special_supports_perk
+
+- name: TV Station
+  category: Media
+  has_job_special: true
+  job_special: "Increased strength gym gains"
+  job_special_type: "stat_training"
+  job_special_synergy: true
+  perks:
+    - Boosts gym stats
+    - Great for melee-based builds
+  synergy_notes:
+    - Helps with stat milestones
+  tags:
+    - mid_budget
+    - stat_boost
+    - gym_synergy
+    - job_special_supports_perk
+
+- name: Sweet Shop
+  category: Food
+  has_job_special: false
+  job_special: null
+  job_special_type: null
+  job_special_synergy: false
+  perks:
+    - Good profit-to-staff ratio
+  synergy_notes:
+    - No special but low upkeep
+  tags:
+    - low_budget
+    - passive_friendly
+    - staff_light
+    - no_job_special
+
+- name: Software Corporation
+  category: Technology
+  has_job_special: true
+  job_special: "Improves hacking success"
+  job_special_type: "intelligence_boost"
+  job_special_synergy: true
+  perks:
+    - Boosts hacking education and performance
+  synergy_notes:
+    - Perfect for computer crime builds
+  tags:
+    - high_budget
+    - hacking_ready
+    - edu_synergy
+    - crime_helper
+    - job_special_supports_perk
+
+- name: Restaurant
+  category: Food
+  has_job_special: false
+  job_special: null
+  job_special_type: null
+  job_special_synergy: false
+  perks:
+    - Steady profit
+    - Low star barrier
+  synergy_notes:
+    - Beginner-friendly, low barrier to entry
+  tags:
+    - low_budget
+    - beginner_friendly
+    - passive_friendly
+    - no_job_special
+
+- name: Furniture Store
+  category: Retail
+  has_job_special: false
+  job_special: null
+  job_special_type: null
+  job_special_synergy: false
+  perks:
+    - Stable income
+  synergy_notes:
+    - Easy to run, no frills
+  tags:
+    - low_budget
+    - staff_light
+    - no_job_special
+    - passive_friendly
+
+- name: Game Development
+  category: Technology
+  has_job_special: true
+  job_special: "Reduces education time"
+  job_special_type: "edu_support"
+  job_special_synergy: true
+  perks:
+    - Supports long-term education grinds
+  synergy_notes:
+    - Excellent for players unlocking advanced perks
