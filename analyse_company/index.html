@@ -517,9 +517,9 @@
 
 
 <h1 id="analyze-my-company-live-api-key">🕵️ Analyze My Company (Live API Key)</h1>
-<p>This tool uses your Torn API key to fetch your company details and generate instant recommendations.</p>
+<p>This tool connects directly to Torn’s API using your company-enabled key to provide real-time analysis.</p>
 <blockquote>
-<p>🔐 This version is preloaded with your API key. Use with caution and never expose your key publicly.</p>
+<p>🛡️ Your API key is embedded directly. Only use this for personal/private versions of your site.</p>
 </blockquote>
 <hr />
 <h2 id="company-snapshot">🧰 Company Snapshot</h2>
@@ -528,11 +528,17 @@
 </div>
 
 <script>
-  const API_KEY = "I3C1bgY38gFFnpeo"; // 🔒 Your live Torn key
+  const API_KEY = "NVMCjgpq86wpcPCF"; // ✅ Your validated key with company access
 
   fetch(`https://api.torn.com/company/?selections=profile,basic&key=${API_KEY}`)
     .then(res => res.json())
     .then(data => {
+      if (!data.company_profile) {
+        document.getElementById("company-info").innerHTML =
+          "<p style='color:red;'>❌ Key is valid, but company data is unavailable. Double-check Torn access settings.</p>";
+        return;
+      }
+
       const company = data.company_profile;
       const staffList = Object.values(data.company_employees || {});
       const staffCount = staffList.length;
@@ -540,8 +546,7 @@
         ? (staffList.reduce((sum, e) => sum + e.days_in_company, 0) / staffCount).toFixed(1)
         : 0;
 
-      const container = document.getElementById("company-info");
-      container.innerHTML = `
+      document.getElementById("company-info").innerHTML = `
         <p><strong>📛 Name:</strong> ${company.name}</p>
         <p><strong>🏢 Type:</strong> ${company.type}</p>
         <p><strong>📈 Tier:</strong> ${company.upgrade}</p>
@@ -552,29 +557,29 @@
     })
     .catch(err => {
       document.getElementById("company-info").innerHTML =
-        `<p style="color:red;">❌ Error fetching data: ${err.message}</p>`;
+        `<p style='color:red;'>❌ Error fetching data: ${err.message}</p>`;
     });
 
   function generateInsight(type, loyaltyStr) {
     const loyalty = parseFloat(loyaltyStr);
     const tips = {
       "Sweet Shop": loyalty >= 30
-        ? "✅ Candy drops are likely active—keep staff loyal to maintain perks."
-        : "🍬 Push average loyalty past 30 days to unlock candy perks.",
+        ? "✅ Candy drops likely active—maintain staff loyalty to keep them flowing."
+        : "🍬 Boost loyalty past 30 days to activate candy perks.",
       "Farm": loyalty >= 40
-        ? "🌾 Happiness and energy bonuses are likely online—consider scaling further."
-        : "🌱 Build loyalty toward 40+ days to activate core perks.",
+        ? "🌾 Happiness and energy bonuses active—expand if needed."
+        : "🌱 Build to 40+ day loyalty for steady passive perks.",
       "Music Store": loyalty >= 35
-        ? "🎶 Bonus item drops should be active—keep those employees happy!"
-        : "📈 Target 35+ day loyalty to trigger drops.",
+        ? "🎶 Item drops probably online—check your item log."
+        : "📈 Push loyalty over 35 days to trigger perks.",
       "Software Corporation": loyalty >= 50
-        ? "💻 Cooldown and energy regen perks should be active."
-        : "👷 Hire long-term INT staff and aim for 50+ day loyalty for max efficiency.",
+        ? "💻 Energy regen and cooldown perks should now be live."
+        : "👷 Steady loyalty growth unlocks passive scaling.",
       "TV Station": loyalty >= 45
-        ? "📺 Crime XP bonuses likely in play—ideal if you're faction-strategizing."
-        : "📰 Build loyalty to unlock game-changing crime and regen perks."
+        ? "📺 Crime XP likely enabled—perfect for faction synergy."
+        : "📰 Loyalty grind → top-tier XP and regen boosts."
     };
-    return tips[type] || "🛠 Insight unavailable yet for this company type. Try hiring, upgrading, or scaling loyalty.";
+    return tips[type] || "🛠 No tailored insight for this company type yet—want to help me add it?";
   }
 </script>
 
