@@ -1,4 +1,4 @@
-site_url: https://graceface-07.github.io/torn-company-assistant/
+site_url: https://Graceface-07.github.io/torn-company-assistant/
 site_name: Torn Company Assistant
 theme:
   name: material
@@ -10,6 +10,10 @@ nav:
   - Join a Company: join_company.md
   - Analyze Company: analyze_company.md
   - Load API Key: load_profile.md
+  - Connect API: connect_api.md
+  - Analyze My Company: analyse_company.md
+
+
 
 markdown_extensions:
   - admonition

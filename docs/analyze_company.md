@@ -1,55 +1,67 @@
-# 🔍 Analyze My Company
+# 🕵️ Analyze My Company
 
-Already running a business? Let’s break it down and see what’s working—or what’s not.
+This tool uses your saved Torn API key to evaluate your current company, its type, and staff setup.
 
----
-
-## 🏭 Company Type  
-Enter your current company type:
-
-- [ ] Furniture Store  
-- [ ] Logistics  
-- [ ] Candle Shop  
-- [ ] Game Development  
-- [ ] Meat Warehouse  
-- [ ] Other: ___________
-
-(This unlocks tailored insights.)
+> ⚠️ Your API key is never shared or stored online—it stays in your browser.
 
 ---
 
-## 👥 Employee Count & Activity  
-- Staffed? [Yes/No]  
-- How many employees regularly work?  
-- Are they trained in job stats (e.g. manual, intelligence)?
+## 🧰 Company Snapshot
+
+<div id="company-info">
+  <p>Loading your company profile...</p>
+</div>
 
 ---
 
-## 💸 Profit Margins  
-- Weekly income: $________  
-- Weekly expenses: $________  
-- Are you providing job points perks or paying daily?  
-- Upgrades: [ ] None [ ] Basic [ ] Maxed
+<script>
+async function fetchCompanyProfile() {
+  const key = localStorage.getItem("torn_api_key");
+  const infoDiv = document.getElementById("company-info");
 
----
+  if (!key) {
+    infoDiv.innerHTML = "<p style='color:red;'>No API key found. Please <a href='connect_api.html'>connect your key</a> first.</p>";
+    return;
+  }
 
-## 📊 Interpretation
+  const url = `https://api.torn.com/company/?selections=profile,basic&key=${key}`;
 
-Depending on your input:
-- A **Furniture Store** with >10 active workers and some upgrades often nets solid ROI.  
-- **Candle Shops** are viable early-game, but stall later.  
-- If you’re managing a **Game Development** company, prepare for payroll juggling.
+  try {
+    const res = await fetch(url);
+    const data = await res.json();
 
-[→ View Company Profiles](company_profiles.md)
+    if (data.error) {
+      infoDiv.innerHTML = `<p style='color:red;'>Error: ${data.error.error}. Check your API key and try again.</p>`;
+      return;
+    }
 
----
+    const company = data.company_profile;
+    const staff = Object.keys(data.company_employees || {}).length;
+    const loyaltyList = Object.values(data.company_employees || {}).map(e => e.days_in_company);
+    const avgLoyalty = loyaltyList.length ? (loyaltyList.reduce((a,b) => a + b) / loyaltyList.length).toFixed(1) : 0;
 
-🧠 Looking for suggestions?
-Check underperforming areas, then:
+    infoDiv.innerHTML = `
+      <p><strong>📛 Company:</strong> ${company.name} (${company.type})</p>
+      <p><strong>📊 Tier:</strong> ${company.upgrade}</p>
+      <p><strong>👥 Staff:</strong> ${staff}</p>
+      <p><strong>❤️ Avg Loyalty:</strong> ${avgLoyalty} days</p>
+      <p><strong>💡 Analysis:</strong> ${getInsight(company.type, avgLoyalty)}</p>
+    `;
+  } catch (err) {
+    infoDiv.innerHTML = `<p style='color:red;'>Unexpected error: ${err.message}</p>`;
+  }
+}
 
-- Hire more active workers  
-- Adjust pay or perk strategies  
-- Add upgrades—especially profit-boosting ones  
-- Downsize or pivot to a new company type  
+function getInsight(type, loyalty) {
+  const l = parseFloat(loyalty);
+  const tips = {
+    "Sweet Shop": l >= 30 ? "✅ Candy drops likely active—maintain staff." : "⏳ Build loyalty toward 30+ days to unlock candy drops.",
+    "Music Store": l >= 35 ? "🎵 Bonus drops should be live. Keep staff active!" : "📈 Push staff to 35+ days for consistent bonuses.",
+    "Farm": l >= 40 ? "🌾 Energy & happiness boosts are unlocked—consider expansion." : "🧪 Scale slow—boost loyalty to activate passive perks.",
+    "Software Corporation": l >= 50 ? "💻 Cooldowns and regen in full effect." : "👷 Hire long-term INT staff to unlock peak value."
+  };
+  return tips[type] || "🛠 No custom insight yet—consider submitting this company type to improve the assistant!";
+}
 
-[↩️ Return to Main Menu](main_menu.md)
+window.onload = fetchCompanyProfile;
+</script>
