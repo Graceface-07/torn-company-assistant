@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#public-company-analyzer" class="md-skip">
+        <a href="#analyze-my-company-api-enabled" class="md-skip">
           Skip to content
         </a>
       
@@ -332,18 +332,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#enter-company-id" class="md-nav__link">
+  <a href="#company-snapshot" class="md-nav__link">
     <span class="md-ellipsis">
-      🔍 Enter Company ID
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#company-report" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧰 Company Report
+      🧰 Company Snapshot
     </span>
   </a>
   
@@ -458,18 +449,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#enter-company-id" class="md-nav__link">
+  <a href="#company-snapshot" class="md-nav__link">
     <span class="md-ellipsis">
-      🔍 Enter Company ID
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#company-report" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧰 Company Report
+      🧰 Company Snapshot
     </span>
   </a>
   
@@ -510,18 +492,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#enter-company-id" class="md-nav__link">
+  <a href="#company-snapshot" class="md-nav__link">
     <span class="md-ellipsis">
-      🔍 Enter Company ID
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#company-report" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧰 Company Report
+      🧰 Company Snapshot
     </span>
   </a>
   
@@ -543,81 +516,66 @@
 
 
 
-<h1 id="public-company-analyzer">🕵️ Public Company Analyzer</h1>
-<p>Curious about your company's performance? Drop in the company ID from Torn, and we’ll evaluate the company’s type, staff count, loyalty, and give tailored suggestions.</p>
+<h1 id="analyze-my-company-api-enabled">🕵️ Analyze My Company (API-Enabled)</h1>
+<p>This tool uses your private Torn API key to fetch your company details and generate real-time analysis.</p>
 <blockquote>
-<p>💡 <strong>Not sure where to find your company ID?</strong><br />
-Open Torn and visit your company profile. The URL will look like this:<br />
-<code>https://www.torn.com/companies.php?id=2244587</code><br />
-The number at the end (e.g. <code>2244587</code>) is your company ID.</p>
+<p>⚠️ Your API key is embedded directly into this page. Only use this locally or in trusted environments!</p>
 </blockquote>
 <hr />
-<h2 id="enter-company-id">🔍 Enter Company ID</h2>
-<form id="company-form">
-  <input type="text" id="companyId" placeholder="Enter Company ID (e.g. 2244587)" />
-  <button type="submit">Analyze</button>
-</form>
-
-<hr />
-<h2 id="company-report">🧰 Company Report</h2>
+<h2 id="company-snapshot">🧰 Company Snapshot</h2>
 <div id="company-info">
-  <p>Awaiting input...</p>
+  <p>Fetching company details...</p>
 </div>
 
-<hr />
 <script>
-document.getElementById("company-form").addEventListener("submit", function(e) {
-  e.preventDefault();
-  const id = document.getElementById("companyId").value.trim();
-  if (!id) return;
+  const API_KEY = "YOUR_API_KEY_HERE"; // 🔒 Replace this with your real Torn API key
 
-  fetch(`https://api.torn.com/company/${id}?selections=profile,basic`)
+  fetch(`https://api.torn.com/company/?selections=profile,basic&key=${API_KEY}`)
     .then(res => res.json())
     .then(data => {
       const company = data.company_profile;
       const staffList = Object.values(data.company_employees || {});
-      const avgLoyalty = staffList.length
-        ? (staffList.reduce((s, e) => s + e.days_in_company, 0) / staffList.length).toFixed(1)
+      const staffCount = staffList.length;
+      const avgLoyalty = staffCount
+        ? (staffList.reduce((sum, e) => sum + e.days_in_company, 0) / staffCount).toFixed(1)
         : 0;
 
-      const info = `
+      const container = document.getElementById("company-info");
+      container.innerHTML = `
         <p><strong>📛 Name:</strong> ${company.name}</p>
         <p><strong>🏢 Type:</strong> ${company.type}</p>
         <p><strong>📈 Tier:</strong> ${company.upgrade}</p>
-        <p><strong>👥 Staff Count:</strong> ${staffList.length}</p>
+        <p><strong>👥 Staff Count:</strong> ${staffCount}</p>
         <p><strong>📅 Avg Loyalty:</strong> ${avgLoyalty} days</p>
-        <p><strong>🧠 Insight:</strong> ${getInsight(company.type, avgLoyalty)}</p>
+        <p><strong>💡 Insight:</strong> ${generateInsight(company.type, avgLoyalty)}</p>
       `;
-
-      document.getElementById("company-info").innerHTML = info;
     })
     .catch(err => {
       document.getElementById("company-info").innerHTML =
-        `<p style="color:red;">⚠️ Unable to fetch data. That company ID might be private or invalid.</p>`;
+        `<p style="color:red;">⚠️ Error fetching data: ${err.message}. Check your API key or company access level.</p>`;
     });
-});
 
-function getInsight(type, loyalty) {
-  const l = parseFloat(loyalty);
-  const tips = {
-    "Sweet Shop": l >= 30
-      ? "✅ Candy drops should now be active. Keep loyalty high to retain bonuses."
-      : "⏳ Build toward 30+ days loyalty to activate candy drops.",
-    "Music Store": l >= 35
-      ? "🎶 You’re likely getting item bonuses—check your log!"
-      : "📈 Push loyalty beyond 35 days for better drops.",
-    "Farm": l >= 40
-      ? "🌾 Happiness and energy bonuses may be active. Consider expanding staff."
-      : "🌱 Boost loyalty for passive income and regen perks.",
-    "Software Corporation": l >= 50
-      ? "💻 Regen and cooldown perks likely unlocked."
-      : "👷 Steady loyalty growth = powerful passive boosts.",
-    "TV Station": l >= 45
-      ? "📺 Crime XP bonus likely active—ideal for faction synergy."
-      : "⚙️ You're on the way to major perks—keep hiring and scaling!"
-  };
-  return tips[type] || "🛠 Insight unavailable for this company type (yet).";
-}
+  function generateInsight(type, loyaltyStr) {
+    const loyalty = parseFloat(loyaltyStr);
+    const tips = {
+      "Sweet Shop": loyalty >= 30
+        ? "✅ Candy drops likely active—nice work!"
+        : "🍬 Try boosting staff loyalty past 30 days for candy perks.",
+      "Farm": loyalty >= 40
+        ? "🌾 Regen and happiness perks active—enjoy the passive bonuses!"
+        : "🌱 Boost loyalty for energy and stat synergy.",
+      "Music Store": loyalty >= 35
+        ? "🎶 Item drops should be showing up—check your logs."
+        : "📈 Try pushing loyalty past 35 days for bonuses.",
+      "Software Corporation": loyalty >= 50
+        ? "💻 Energy regen and cooldown reduction likely in effect."
+        : "👷 Keep long-term hires to unlock powerful passive perks.",
+      "TV Station": loyalty >= 45
+        ? "📺 Crime XP boost probably unlocked—great for faction synergy."
+        : "📰 You're on the right path—scale up staffing and loyalty."
+    };
+    return tips[type] || "🛠 No insight yet for this company type—submit yours to help us expand!";
+  }
 </script>
 
 
