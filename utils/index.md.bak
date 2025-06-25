@@ -1,0 +1,18 @@
+# Index
+
+_This is a stub page._
+<!-- description: Utility tools to help power up your Torn workflow -->
+
+# 🧰 Torn Assistant: Utilities
+
+Need a quick fix or diagnostic tool? This section houses all the behind-the-scenes helpers to keep your docs clean and functional.
+
+---
+
+## 🧪 Maintenance & Validation
+
+- 🔍 [Link Checker](link_checker.md) — Detects broken Markdown links  
+- 🧼 [Nav Cleanup](nav_cleanup.md) — Removes unused or outdated entries  
+- 📐 [Nav Optimizer](nav_optimizer.md) — Auto-sorts and balances nav sections  
+
+Looking to automate your project hygiene? These scripts are your maintenance crew. 🧹🔧

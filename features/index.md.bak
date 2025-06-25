@@ -1,0 +1,21 @@
+# 🧭 Decision Flow Hub
+
+Navigate scenarios and recommendations based on your goals, working stats, or resources.
+
+---
+
+??? abstract "🧠 Strategic Advisors"
+    - 💼 [Company Recommender](company_recommender_workingstats.md)
+    - 📋 [Job Picker](job_picker.md)
+    - 🧠 [Respec Tool](respec_tool.md)
+
+??? note "🎯 Goal-Based Planners"
+    - 💪 [Stat-Oriented Plan](goal_stats.md)
+    - 💰 [Profit-Oriented Plan](goal_profit.md)
+    - 🗨️ [Social-Oriented Plan](goal_social.md)
+    - 🧠 [General Strategy Guide](goal_strategy.md)
+
+??? tip "💼 Other Paths"
+    - 🏢 [Start or Buy Company](start_or_buy.md)
+    - 📊 [Performance Review](performance_review.md)
+    - 📈 [Stat Analysis](stat_analysis.md)

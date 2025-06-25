@@ -1,0 +1,48 @@
+# 🗺️ Torn Assistant: Main Menu
+
+Welcome, Director. Everything you need is just a click away. Collapse or expand each section to stay focused while grinding 💼⚙️
+
+---
+
+??? abstract "💼 Company Recommender"
+    <!-- - 🧠 [Which Company Should I Apply To?](decision_flow/company_recommender_workingstats.md) -->
+    <!-- - 🏢 [Start or Buy a Company?](decision_flow/start_or_buy.md) -->
+    <!-- - 📋 [Performance Review](decision_flow/performance_review.md) -->
+    <!-- - 🔍 [Analyse a Company](decision_flow/analyse_company.md) -->
+    - 🧮 [Job Picker](decision_flow/job_picker.md)
+
+??? note "🎯 Goal Strategy"
+    <!-- - 📈 [Stat-Based Plan](decision_flow/goal_stats.md) -->
+    <!-- - 💰 [Profit-Oriented Plan](decision_flow/goal_profit.md) -->
+    <!-- - 🗨️ [Social / RP Plan](decision_flow/goal_social.md) -->
+    <!-- - 🧠 [General Strategy Guide](decision_flow/goal_strategy.md) -->
+
+??? tip "🧪 Tools & Calculators"
+    <!-- - 🔁 [Respec Tool](decision_flow/respec_tool.md) -->
+    <!-- - 📊 [Stat Analysis](decision_flow/stat_analysis.md) -->
+    - 💊 [Drug Refill Calculator](features/refill_calculator.md)
+
+??? info "🏢 Company Profiles"
+    - 🪑 [Furniture Store](company_profiles/furniture_store.md)
+    - 🍣 [Restaurant](company_profiles/restaurant.md)
+    - 📺 [TV Station](company_profiles/tv_station.md)
+    - 🧾 [Job Specials](company_profiles/job_specials.md)
+    - 🗂️ [Company Overview](company_profiles/index.md)
+
+??? example "⚙️ Assistant Features"
+    <!-- - 🧾 [Load Player Profile](load_profile.md) -->
+    <!-- - 🤝 [Join a Company](join_company.md) -->
+    <!-- - 🔒 [Connect API](connect_api.md) -->
+
+??? info "🧰 Utilities"
+    - 🧭 [Link Checker](utils/link_checker.md)
+    - 🧼 [Nav Cleanup](utils/nav_cleanup.md)
+    - 📐 [Nav Optimizer](utils/nav_optimizer.md)
+    - 📂 [Utilities Index](utils/index.md)
+
+??? abstract "📦 Output & Logs"
+    - 📄 [Output Overview](output/index.md)
+    - 📝 [Recommendations](output/recommendations.md)
+
+??? note "🧾 Miscellaneous"
+    - 📋 [Changelog](changelog.md)
