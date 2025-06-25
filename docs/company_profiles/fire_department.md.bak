@@ -1,0 +1,18 @@
+# 🚒 Fire Department
+
+**Stat Focus:** Endurance  
+**Perks:** All-Round Boosts, Energy Bonuses  
+**Leadership Friendly:** N/A  
+
+**Job Specials:**  
+- Refill Boost  
+- Gym Multiplier  
+- Team Bonuses  
+---
+
+Fire Department jobs provide balanced stat growth and energy benefits, making them excellent for casual players who want light interaction and modest scaling. Their bonuses help maintain gym progress while still earning income.
+
+**Best For:**  
+- Endurance-focused builds  
+- Passive gym trainers  
+- Players seeking broad stat coverage  

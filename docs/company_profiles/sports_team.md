@@ -1,0 +1,19 @@
+# 🥋 Sports Team
+
+**Stat Focus:** Endurance  
+**Perks:** Gym stat bonuses, passive stat scaling  
+**Leadership Friendly:** Low  
+
+**Job Specials:**  
+- Strength Boost  
+- Defense Boost  
+- Gym Multiplier  
+- Active Training Enhancements  
+---
+
+Sports Teams are built for endurance stat training. They often provide unique gym-related perks and incremental stat improvements. Best suited for very active players who want to convert job time into endurance or strength growth.
+
+**Best For:**  
+- Stat grinders  
+- Solo endurance stacks  
+- Gym synergy accounts  

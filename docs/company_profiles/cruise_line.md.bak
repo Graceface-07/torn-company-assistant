@@ -1,0 +1,19 @@
+# 🛳️ Cruise Line
+
+**Stat Focus:** Endurance  
+**Perks:** Drug refills, travel discounts, refill cooldowns  
+**Leadership Friendly:** Medium  
+
+**Job Specials:**  
+- Travel Vouchers  
+- Drug Cooldown Reduction  
+- Refill Discount or Boost  
+- Enhanced Job Points for Boost Items  
+---
+
+Cruise Lines are ideal for players who travel often or use refills and drugs regularly. They offer valuable specials that reduce cooldowns and improve refill efficiency. Great for Endurance-focused accounts that want a blend of perks and decent earnings — especially for faction travelers or resellers.
+
+**Best For:**  
+- Refill chains  
+- Drug buffs  
+- Passive travel profit  

@@ -1,30 +1,31 @@
 site_name: Torn Assistant
-site_url: https://your-custom-url.com
-
-nav:
-  - Home: index.md
-  - Company Profiles:
-      - Profile Index: company_profiles/index.md
-      - Job Special Guide: company_profiles/job_specials.md
-  - Decision Flow:
-      - Start: decision_flow/index.md
-      - Goals:
-          - Profit: decision_flow/goal_profit.md
-          - Stats: decision_flow/goal_stats.md
-          - Strategy: decision_flow/goal_strategy.md
-          - Social: decision_flow/goal_social.md
-      - Budget Paths:
-          - Low Profit: decision_flow/budget_low_profit.md
-          - Mid Profit: decision_flow/budget_mid_profit.md
-          - High Profit: decision_flow/budget_high_profit.md
-  - Recommendations: output/recommendations.md
-
 theme:
   name: material
-  language: en
 
-markdown_extensions:
-  - admonition
-  - codehilite
-  - toc:
-      permalink: true
+nav:
+  - 🏠 Home: index.md
+
+  - 🧭 Decision Tools:
+      - 🏢 Company Recommender: decision_flow\company_recommender_workingstats.md
+      - 📋 Job Picker Wizard: decision_flow/job_picker.md
+
+  - 🏢 Company Profiles:
+      - Cruise Line: company_profiles/cruise_line.md
+      - Music Store: company_profiles/music_store.md
+      - Restaurant: company_profiles/restaurant.md
+      - TV Station: company_profiles/tv_station.md
+      - Sports Team: company_profiles/sports_team.md
+      - Law Firm: company_profiles/law_firm.md
+      - Farm: company_profiles/farm.md
+      - Tech Company: company_profiles/tech_company.md
+      - Software Corporation: company_profiles/software_corporation.md
+      - Mechanic: company_profiles/mechanic.md
+      - Sweet Shop: company_profiles/sweet_shop.md
+      - Game Development: company_profiles/game_development.md
+      - Furniture Store: company_profiles/furniture_store.md
+
+  - 👨‍💼 Job Profiles:
+      - Medical: company_profiles/medical.md
+      - Army: company_profiles/army.md
+      - Fire Department: company_profiles/fire_department.md
+      - Casino: company_profiles/casino.md

@@ -1,0 +1,51 @@
+site_name: Torn Assistant
+theme:
+  name: material
+
+nav:
+# ⛔ Missing file, commented out:
+#   - 🏠 Home: index.md
+
+  - 🧭 Decision Tools:
+# ⛔ Missing file, commented out:
+#       - 🏢 Company Recommender: decision_flow/company_picker.md
+# ⛔ Missing file, commented out:
+#       - 📋 Job Picker Wizard: decision_flow/job_picker.md
+
+  - 🏢 Company Profiles:
+# ⛔ Missing file, commented out:
+#       - Cruise Line: company_profiles/cruise_line.md
+# ⛔ Missing file, commented out:
+#       - Music Store: company_profiles/music_store.md
+# ⛔ Missing file, commented out:
+#       - Restaurant: company_profiles/restaurant.md
+# ⛔ Missing file, commented out:
+#       - TV Station: company_profiles/tv_station.md
+# ⛔ Missing file, commented out:
+#       - Sports Team: company_profiles/sports_team.md
+# ⛔ Missing file, commented out:
+#       - Law Firm: company_profiles/law_firm.md
+# ⛔ Missing file, commented out:
+#       - Farm: company_profiles/farm.md
+# ⛔ Missing file, commented out:
+#       - Tech Company: company_profiles/tech_company.md
+# ⛔ Missing file, commented out:
+#       - Software Corporation: company_profiles/software_corporation.md
+# ⛔ Missing file, commented out:
+#       - Mechanic: company_profiles/mechanic.md
+# ⛔ Missing file, commented out:
+#       - Sweet Shop: company_profiles/sweet_shop.md
+# ⛔ Missing file, commented out:
+#       - Game Development: company_profiles/game_development.md
+# ⛔ Missing file, commented out:
+#       - Furniture Store: company_profiles/furniture_store.md
+
+  - 👨‍💼 Job Profiles:
+# ⛔ Missing file, commented out:
+#       - Medical: company_profiles/medical.md
+# ⛔ Missing file, commented out:
+#       - Army: company_profiles/army.md
+# ⛔ Missing file, commented out:
+#       - Fire Department: company_profiles/fire_department.md
+# ⛔ Missing file, commented out:
+#       - Casino: company_profiles/casino.md

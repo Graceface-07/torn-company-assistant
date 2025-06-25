@@ -1,0 +1,16 @@
+# 🎰 Casino
+
+**Stat Focus:** Balanced  
+**Perks:** Morale Boosts, Fun Perks  
+**Leadership Friendly:** N/A  
+
+**Job Specials:**  
+- <em>No Job Specials</em>  
+---
+
+Casino work offers a unique environment built around morale and light interaction. It’s a solid pick for relaxed players who want consistent income with minimal effort. While it doesn’t offer stat advantages, it rewards long-term attendance.
+
+**Best For:**  
+- Casual logins  
+- Daily morale maintenance  
+- Players not focused on stat progression  

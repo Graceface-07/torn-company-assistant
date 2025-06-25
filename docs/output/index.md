@@ -1,0 +1,8 @@
+# 📦 Output Center
+
+Access generated recommendations and summaries from assistant tools.
+
+---
+
+??? example "🗂️ Result Pages"
+    - ✅ [Recommendations](recommendations.md)

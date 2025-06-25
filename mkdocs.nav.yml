@@ -1,0 +1,36 @@
+site_name: Torn Assistant
+site_url: https://your-site-url.com
+theme:
+  name: material
+  features:
+  - navigation.sections
+  - navigation.expand
+  - toc.integrate
+  palette:
+    scheme: default
+nav:
+- Home: index.md
+- Decision Flow:
+  - Overview: decision_flow/index.md
+  - Job Picker: decision_flow/job_picker.md
+  - Stat Analysis: decision_flow/stat_analysis.md
+  - Respec Tool: decision_flow/respec_tool.md
+- Company Profiles:
+  - Overview: company_profiles/index.md
+  - Furniture Store: company_profiles/furniture_store.md
+  - Game Development: company_profiles/game_development.md
+  - Mechanic: company_profiles/mechanic.md
+  - Music Store: company_profiles/music_store.md
+  - Restaurant: company_profiles/restaurant.md
+  - Software Corporation: company_profiles/software_corporation.md
+  - Sweet Shop: company_profiles/sweet_shop.md
+  - TV Station: company_profiles/tv_station.md
+- Features:
+  - Overview: features/index.md
+  - Auto-Banking: features/auto_banking.md
+  - Advanced Reporting: features/advanced_reporting.md
+  - Refill Calculator: features/refill_calculator.md
+- Utilities:
+  - Link Checker: utils/link_checker.md
+  - Nav Builder: utils/nav_builder.md
+- Changelog: changelog.md
