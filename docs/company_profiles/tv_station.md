@@ -1,19 +1,36 @@
-# 📺 TV Station
+﻿# 📺 TV Station  
+**Media-based company offering crime, PR, and nerve-use perks**
 
-**Stat Focus:** Intelligence  
-**Perks:** High passive income, minimal upkeep  
-**Leadership Friendly:** Low  
+**Employees:**          10–20  
+**Startup Cost:**       $3,250,000  
+**Roles:**              Assistant, Editor, Producer  
 
-**Job Specials:**  
-- Nerve Boost  
-- Drug Cooldown Reduction  
-- Extra Energy/Morale  
+**Primary Stat:**       Intelligence (INT)  
+**Secondary Stat:**     Manual Labor (LAB)  
+
+**Features:**           Crime and nerve-focused bonuses  
+**Synergy:**            Editors improve nerve regen, Producers boost PR payout odds
 
 ---
 
-TV Stations are nearly self-sufficient once set up. Their focus on passive earnings makes them perfect for casual players who want to earn without managing systems or engaging daily.
+✅🎖️ Job Specials
 
-**Best For:**  
-- Inactive/casual players  
-- Daily login income  
-- Fast passive gainers  
+- **Editor**: +5% passive nerve regeneration  
+- **Producer**: 15% chance to double PR crime rewards
+
+---
+
+### 🧾 Job Notes
+
+✅ **Crime Build Synergy**  
+Perfect for players running PR crimes or grinding nerve-heavy grinds. TV Station keeps both regen and rewards on high cycle.
+
+✅ **Great with Book Paths**  
+Pairs well with temporary books or education perks that enhance nerve gain or crime success — stacking efficiency.
+
+✅ **Semi-AFK Compatible**  
+Perks apply passively and require no job point micromanagement — works while training or low-attention playing.
+
+---
+
+📎 [Working Stats](../company_info/working-stats.md) • [Company Index](index.md)

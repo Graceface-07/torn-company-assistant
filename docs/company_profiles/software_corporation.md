@@ -1,19 +1,36 @@
-# 📈 Software Corporation
+﻿# 💾 Software Corporation  
+**Tech-focused company offering coding perks and hacking utility**
 
-**Stat Focus:** Intelligence  
-**Perks:** Promotion tracking, project bonuses, solid income  
-**Leadership Friendly:** High  
+**Employees:**          10–20  
+**Startup Cost:**       $4,500,000  
+**Roles:**              Intern, Engineer, Architect  
 
-**Job Specials:**  
-- Job Ladder with Milestones  
-- Coding Bonuses  
-- Project Buffs  
+**Primary Stat:**       Intelligence (INT)  
+**Secondary Stat:**     Manual Labor (LAB)  
+
+**Features:**           Script/coding support, API boosts, passive income  
+**Synergy:**            Engineers gain faster script returns, Architects scale profit multipliers
 
 ---
 
-Software Corps are ideal for mid-to-late-game players building leadership or prestige roles. They offer strong progression paths, clear growth milestones, and perks aimed at consistency.
+✅🎖️ Job Specials
 
-**Best For:**  
-- Career-focused players  
-- Leader-type personalities  
-- Internal promotion lovers  
+- **Engineer**: -10% API cooldown time on scripting actions  
+- **Architect**: +15% bonus profit from software-based trades and tools
+
+---
+
+### 🧾 Job Notes
+
+✅ **Power Tool Perks**  
+Optimized for advanced scripting, automation, trade bots — even item scanners and stock monitors.
+
+✅ **Perfect for Coders**  
+If you build Torn tools or run market scripts, this company will feel like home.
+
+✅ **Stackable with Developer Roles**  
+Pair with Game Dev or Education for a multidimensional boost to tech-based activities.
+
+---
+
+📎 [Working Stats](../company_info/working-stats.md) • [Company Index](index.md)

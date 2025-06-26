@@ -66,8 +66,16 @@ def run():
         print("❌ mkdocs.yml not found.")
         return
 
-    with open(MKDOCS, "r", encoding="utf-8") as f:
-        config = yaml.safe_load(f)
+    try:
+        with open(MKDOCS, "r", encoding="utf-8") as f:
+            try:
+                config = yaml.unsafe_load(f)
+            except AttributeError:
+                from yaml import FullLoader
+                config = yaml.load(f, Loader=FullLoader)
+    except Exception as e:
+        print(f"❌ Failed to parse mkdocs.yml: {e}")
+        return
 
     nav_files = flatten_nav(config.get("nav", []))
     md_files = all_md_files()
@@ -78,32 +86,41 @@ def run():
     missing_nav = nav_files - md_keys
 
     print("📄 Files not in nav:")
-    for o in sorted(orphans):
-        print(f"  - {o}")
-    if not orphans: print("  ✅ None")
+    if orphans:
+        for o in sorted(orphans):
+            print(f"  - {o}")
+    else:
+        print("  ✅ None")
 
-    print("\⚠️ Nav entries missing from disk:")
-    for m in sorted(missing_nav):
-        print(f"  - {m}")
-    if not missing_nav: print("  ✅ None")
+    print("\n⚠️ Nav entries missing from disk:")
+    if missing_nav:
+        for m in sorted(missing_nav):
+            print(f"  - {m}")
+    else:
+        print("  ✅ None")
 
     # Link scan
     link_refs = scan_links()
     broken_links = [target for src, target in link_refs if target not in md_keys]
 
     print("\n🔗 Broken internal Markdown links:")
+    found_broken = False
     for src, target in sorted(link_refs):
         if target not in md_keys:
             print(f"  - {src} ➜ {target}")
-    if not broken_links: print("  ✅ All internal links are valid")
+            found_broken = True
+    if not found_broken:
+        print("  ✅ All internal links are valid")
 
     # Index check
     missing_index = check_index_md(md_keys)
 
     print("\n📁 Folders missing index.md:")
-    for folder in sorted(missing_index):
-        print(f"  - {folder}/")
-    if not missing_index: print("  ✅ All folders have index.md")
+    if missing_index:
+        for folder in sorted(missing_index):
+            print(f"  - {folder}/")
+    else:
+        print("  ✅ All folders have index.md")
 
     print("\n✅ Audit complete.")
 

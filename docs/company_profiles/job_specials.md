@@ -1,13 +1,12 @@
-# Job Special Guide
+﻿# Job Special Guide
 
-**Stat Focus:** Manual  
-**Perks:** TBD  
-**Leadership Friendly:** N/A  
+**Stat Focus:** Manual
+**Perks:** TBD
+**Leadership Friendly:** N/A
 
-**Job Specials:**  
-- TBD  
+**Job Specials:**
+- TBD
 ---
-
 
 Job Specials are **permanent perks** you earn by working in certain companies in Torn. Once unlocked, they stay with your character — even if you change jobs. Think of them like career upgrades: commit to a path, perform well, and unlock long-term benefits.
 
@@ -27,32 +26,32 @@ Job Specials are **permanent perks** you earn by working in certain companies in
 Here are common perk types grouped by gameplay impact:
 
 ### Stat Boosting Perks
-Help you train faster at the gym (e.g. Strength, Dexterity gains)  
-🧩 Example: **TV Station** boosts Strength gym gains
+Help you train faster at the gym (e.g. Strength, Dexterity gains)
+ðŸ§© Example: **TV Station** boosts Strength gym gains
 
 ### Energy & Regeneration
-Improve energy refill cooldown or regen rate  
-🧩 Example: **Music Store** shortens energy refill cooldown
+Improve energy refill cooldown or regen rate
+ðŸ§© Example: **Music Store** shortens energy refill cooldown
 
 ### Intelligence, Education, & Hacking
-Help you finish education faster or improve IQ-based actions  
-🧩 Example: **Software Corporation** boosts Intelligence
+Help you finish education faster or improve IQ-based actions
+ðŸ§© Example: **Software Corporation** boosts Intelligence
 
 ### Travel Benefits
-Speed up travel or increase profit from item trading abroad  
-🧩 Example: **Mechanic** improves vehicle/travel performance
+Speed up travel or increase profit from item trading abroad
+ðŸ§© Example: **Mechanic** improves vehicle/travel performance
 
 ### Crime, Medical, Revive
-Shorten hospital time, improve revive chances, or boost crime results  
-🧩 Often paired with support builds or strategic factions
+Shorten hospital time, improve revive chances, or boost crime results
+ðŸ§© Often paired with support builds or strategic factions
 
 ---
 
 ## How to Use This Guide
 
-Check any company’s [profile](./index.md) for its special. You’ll see something like:
+Check any company's [profile](./index.md) for its special. You'll see something like:
 
-> **Job Special**: Faster energy refill cooldown  
+> **Job Special**: Faster energy refill cooldown
 > **Best For**: Active grinders and chaining builds
 
 You can also get personalized suggestions by using the [Decision Assistant](../decision_flow/index.md).
@@ -63,9 +62,9 @@ You can also get personalized suggestions by using the [Decision Assistant](../d
 
 Start here:
 
-👉 [Launch the Decision Assistant](../decision_flow/index.md)  
-We’ll ask a few questions and show only the companies that match your build, goals, and budget.
+👉 [Launch the Decision Assistant](../decision_flow/index.md)
+We'll ask a few questions and show only the companies that match your build, goals, and budget.
 
 ---
 
-When you know your playstyle — gym rat, hacker, chain specialist, passive earner — there’s a perk to match. This guide helps you make it count. 💡
+When you know your playstyle — gym rat, hacker, chain specialist, passive earner — there's a perk to match. This guide helps you make it count. ðŸ'¡

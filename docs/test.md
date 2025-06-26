@@ -1,4 +1,4 @@
-# Collapsible Test
+﻿# Collapsible Test
 
 ??? info "Click me!"
     - This should collapse and expand.

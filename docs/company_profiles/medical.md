@@ -1,18 +1,36 @@
-# 🏥 Medical
+﻿# 🩺 Medical Facility  
+**Healing-based company with hospital stay reduction and medical boost perks**
 
-**Stat Focus:** Manual  
-**Perks:** Energy Refills, Gym Boosters  
-**Leadership Friendly:** N/A  
+**Employees:**          10–20  
+**Startup Cost:**       $4,750,000  
+**Roles:**              Nurse, Medic, Surgeon  
 
-**Job Specials:**  
-- Recover Energy  
-- First Aid Refill  
-- Gym Cost Discount  
+**Primary Stat:**       Intelligence (INT)  
+**Secondary Stat:**     Endurance (END)  
+
+**Features:**           Hospital timer reduction, HP bonuses  
+**Synergy:**            Medics improve booster effects, Surgeons cut hospital time
+
 ---
 
-Medical careers reward activity and provide some of the best gym support for manual-heavy players. A great first job to build stat foundations and earn refill value while maintaining daily presence.
+✅🎖️ Job Specials
 
-**Best For:**  
-- Early stat training  
-- Manual stat users  
-- Chain cooldown recovery  
+- **Medic**: +10% HP recovery from booster items  
+- **Surgeon**: -15% hospital time after defeat
+
+---
+
+### 🧾 Job Notes
+
+✅ **Hospital Efficiency**  
+Shave down post-battle downtime — essential for aggressive chainers and bounty hunters.
+
+✅ **Supports PvP Players**  
+Medics support booster builds, and fast hospital bounce-back is huge for fast-paced war settings.
+
+✅ **Great with Fire Station, Insurance**  
+Combine with other hospital-cutting roles for near-constant uptime.
+
+---
+
+📎 [Working Stats](../company_info/working-stats.md) • [Company Index](index.md)

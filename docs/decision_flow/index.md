@@ -1,8 +1,3 @@
-# 🧭 Decision Tools Index
+﻿# ðŸ§­ Decision Tools Index
 
-Choose your direction:
-
----
-
-<!-- - [Start or Buy a Company](start_or_buy.md) -->
-<!-- - [Performance Review](performance_review.md) -->
+Coming Soon

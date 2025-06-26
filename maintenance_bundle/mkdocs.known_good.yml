@@ -1,0 +1,59 @@
+site_name: Torn Assistant
+theme:
+  name: material
+nav:
+- Start Here:
+  - Welcome: index.md
+- Making Money:
+  - Profit Wizard Overview: profit_wizard/index.md
+  - Summary & Next Steps: 9_summary.md
+  - Profit Wizard Overview: profit_wizard/index.md
+- Company Guide:
+  - Bank: company_profiles/bank.md
+  - Cruise Line: company_profiles/cruise_line.md
+  - Grocery Store: company_profiles/grocery_store.md
+  - Law Firm: company_profiles/law_firm.md
+  - Sweet Shop: company_profiles/sweet_shop.md
+  - Tech Company: company_profiles/tech_company.md
+  - TV Station: company_profiles/tv_station.md
+  - Bank: company_profiles/bank.md
+  - Cruise Line: company_profiles/cruise_line.md
+  - Grocery Store: company_profiles/grocery_store.md
+  - Law Firm: company_profiles/law_firm.md
+  - Sweet Shop: company_profiles/sweet_shop.md
+  - Tech Company: company_profiles/tech_company.md
+  - TV Station: company_profiles/tv_station.md
+  - Company Info Index: company_info/index.md
+- Decision Flow:
+  - Index: decision_flow/index.md
+  - Stat Entry: decision_flow/stat_entry.md
+  - Budget Advice: decision_flow/budget_advice.md
+  - Performance Review: decision_flow/performance_review.md
+  - Goal Strategy: decision_flow/goal_strategy.md
+  - Goal - Profit: decision_flow/goal_profit.md
+  - Goal - Social: decision_flow/goal_social.md
+  - Goal - Stats: decision_flow/goal_stats.md
+  - Respec Tool: decision_flow/respec_tool.md
+  - Decision Flow Index: decision_flow/index.md
+  - Stat Entry: decision_flow/stat_entry.md
+  - Budget Advice: decision_flow/budget_advice.md
+  - Performance Review: decision_flow/performance_review.md
+  - Goal Strategy: decision_flow/goal_strategy.md
+  - Goal - Profit: decision_flow/goal_profit.md
+  - Goal - Social: decision_flow/goal_social.md
+  - Goal - Stats: decision_flow/goal_stats.md
+  - Respec Tool: decision_flow/respec_tool.md
+- Gear:
+  - Armour Loadouts: gear/armour/index.md
+  - Weapon Loadouts: gear/weapons/index.md
+  - Armour Loadouts: gear/armour/index.md
+  - Weapon Loadouts: gear/weapons/index.md
+- Docs:
+  - Changelog: changelog.md
+  - Changelog: changelog.md
+- Utilities:
+  - Connect API: connect_api.md
+  - Nav Optimizer: utils/nav_optimizer.md
+  - Link Checker: utils/link_checker.md
+  - Nav Cleanup: utils/nav_cleanup.md
+  - Connect API: connect_api.md

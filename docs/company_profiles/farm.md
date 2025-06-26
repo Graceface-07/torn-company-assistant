@@ -1,19 +1,36 @@
-# 🚜 Farm
+﻿# 🚜 Farm  
+**Food-focused company providing refill perks and travel item returns**
 
-**Stat Focus:** Manual  
-**Perks:** Gym synergy, food recovery, morale boost  
-**Leadership Friendly:** Medium  
+**Employees:**          7–15  
+**Startup Cost:**       $1,750,000  
+**Roles:**              Harvester, Picker, Rancher  
 
-**Job Specials:**  
-- Fresh Food Items  
-- Natural Gym Boosts  
-- Passive Energy  
+**Primary Stat:**       Manual Labor (LAB)  
+**Secondary Stat:**     Endurance (END)  
+
+**Features:**           Item return, hunger refill, basic perks  
+**Synergy:**            Ranchers increase food yield, Pickers reduce refill cooldown
 
 ---
 
-Farms are quiet powerhouses for Manual-based characters. They provide affordable gym bonuses and early game advantages for anyone not ready to manage a large company.
+✅🎖️ Job Specials
 
-**Best For:**  
-- Low-cost growth  
-- Manual stat stackers  
-- Solo/family accounts  
+- **Picker**: -5% cooldown on refill usage  
+- **Rancher**: +15% chance of bonus refill item return
+
+---
+
+### 🧾 Job Notes
+
+✅ **Refill-Friendly Utility**  
+Pairs with happiness or gym-focused builds. Bonus item returns help offset refill cost or support plushie/farm runs.
+
+✅ **Works for Travelers**  
+Farm is a great low-investment landing spot while abroad — consistent passive benefit without daily task demands.
+
+✅ **Basic but Efficient**  
+Not a top-tier company, but good for early game or passive play with small food bonuses.
+
+---
+
+📎 [Working Stats](../company_info/working-stats.md) • [Company Index](index.md)

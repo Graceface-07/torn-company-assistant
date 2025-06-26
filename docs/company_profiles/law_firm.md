@@ -1,18 +1,36 @@
-# 🔬 Law Firm
+﻿# ⚖️ Law Firm  
+**Crime-aligned company with jail, bounty, and legal perks**
 
-**Stat Focus:** Intelligence  
-**Perks:** Stealth, speed, defense boosts  
-**Leadership Friendly:** Medium  
+**Employees:**          10–20  
+**Startup Cost:**       $4,250,000  
+**Roles:**              Clerk, Paralegal, Partner  
 
-**Job Specials:**  
-- Reduced Jail Time  
-- Extra Stealth Gains  
-- Lawyer Services  
+**Primary Stat:**       Intelligence (INT)  
+**Secondary Stat:**     Endurance (END)  
+
+**Features:**           Jail, bounty, and arrest-focused perks  
+**Synergy:**            Paralegals reduce sentence times, Partners boost bust odds
+
 ---
 
-Law Firms cater to stealth-focused players and those aiming to escape jail time or improve combat readiness. They’re also solid for intelligence grinding and long-term progression.
+✅🎖️ Job Specials
 
-**Best For:**  
-- Stealth/sniper builds  
-- Criminal job synergy  
-- Jail-avoidant players  
+- **Paralegal**: -10% jail sentence duration  
+- **Partner**: +15% bust success chance
+
+---
+
+### 🧾 Job Notes
+
+✅ **Jail Utility**  
+If you chain or commit high-fail crimes, this job reduces penalties and helps factionmates with bust bonuses.
+
+✅ **Faction Crime Synergy**  
+Strong support role when paired with organized jail/bounty operations. Helps sustain chaining cycles longer.
+
+✅ **Pairs with Criminal Books, Merits, and Stock Perks**  
+Amplifies busting success, pairs with nerve regeneration, and reduces downtime for criminal activities.
+
+---
+
+📎 [Working Stats](../company_info/working-stats.md) • [Company Index](index.md)

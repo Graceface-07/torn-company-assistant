@@ -1,19 +1,36 @@
-# 🛳️ Cruise Line
+﻿# 🚢 Cruise Liners  
+**Luxury travel company offering passive perks and energy bonuses abroad**
 
-**Stat Focus:** Endurance  
-**Perks:** Drug refills, travel discounts, refill cooldowns  
-**Leadership Friendly:** Medium  
+**Employees:**          10–20  
+**Startup Cost:**       $4,250,000  
+**Roles:**              Attendant, Officer, Captain  
 
-**Job Specials:**  
-- Travel Vouchers  
-- Drug Cooldown Reduction  
-- Refill Discount or Boost  
-- Enhanced Job Points for Boost Items  
+**Primary Stat:**       Endurance (END)  
+**Secondary Stat:**     Intelligence (INT)  
+
+**Features:**           Travel + passive regen while overseas  
+**Synergy:**            Officers improve item gains, Captains boost stat regen while abroad
+
 ---
 
-Cruise Lines are ideal for players who travel often or use refills and drugs regularly. They offer valuable specials that reduce cooldowns and improve refill efficiency. Great for Endurance-focused accounts that want a blend of perks and decent earnings — especially for faction travelers or resellers.
+✅🎖️ Job Specials
 
-**Best For:**  
-- Refill chains  
-- Drug buffs  
-- Passive travel profit  
+- **Officer**: +10% chance of bonus item return from foreign travel  
+- **Captain**: +5% passive energy regen while outside Torn
+
+---
+
+### 🧾 Job Notes
+
+✅ **Travel Builds Rejoice**  
+Pairs well with trading, smuggling, plushie farming — ideal for players always on the move.
+
+✅ **Passive Regen Abroad**  
+One of the few jobs that reward being outside Torn. Perfect for mobile-first or travel-intensive strategies.
+
+✅ **Stacks with Island and Education Perks**  
+Synergizes with Private Island travel speed, airport upgrades, and cooldown-reducing merits.
+
+---
+
+📎 [Working Stats](../company_info/working-stats.md) • [Company Index](index.md)

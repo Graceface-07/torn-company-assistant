@@ -1,0 +1,1454 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>🧠 Torn Company Recommender (Full Wizard) - Torn Assistant</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#torn-company-recommender-full-wizard" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Torn Assistant" class="md-header__button md-logo" aria-label="Torn Assistant" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Torn Assistant
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🧠 Torn Company Recommender (Full Wizard)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Torn Assistant" class="md-nav__button md-logo" aria-label="Torn Assistant" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Torn Assistant
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Start Here
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Start Here
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Welcome
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Making Money
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Making Money
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../profit_wizard/1a_bank_stock_access/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Profit Wizard Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Company Guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Company Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../company_profiles/bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bank
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../company_profiles/cruise_line/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cruise Line
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../company_profiles/grocery_store/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grocery Store
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../company_profiles/law_firm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Law Firm
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../company_profiles/sweet_shop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sweet Shop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../company_profiles/tech_company/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tech Company
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../company_profiles/tv_station/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TV Station
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../company_info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Company Info Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Decision Flow
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Decision Flow
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stat_entry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Stat Entry (Start Here)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../company_recommender_workingstats/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Company Recommender
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../budget_advice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Budget Advice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../performance_review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Performance Review
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../goal_strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Goal Strategy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../goal_profit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Goal - Profit
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../goal_social/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Goal - Social
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../goal_stats/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Goal - Stats
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../respec_tool/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Respec Tool
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Decision Flow Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Gear
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Gear
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gear/armour/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Armour Loadouts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gear/weapons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Weapon Loadouts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Docs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Docs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Changelog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Utilities
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Utilities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connect_api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Connect API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../utils/nav_optimizer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Nav Optimizer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../utils/link_checker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Link Checker
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../utils/nav_cleanup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Nav Cleanup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="torn-company-recommender-full-wizard">🧠 Torn Company Recommender (Full Wizard)</h1>
+<p>This assistant will guide you through a series of tailored questions to recommend the ideal 10★ companies based on your stats, goals, habits, and ambitions.</p>
+<hr />
+<div id="wizard" style="margin-top: 20px;">
+  <!-- Step Container -->
+  <div id="step-container"></div>
+  <button id="nextBtn" style="margin-top:20px; display:none;" onclick="nextStep()">Next</button>
+
+  <!-- Final Recommendations -->
+  <div id="result" style="display:none; margin-top:30px; background:#f9f9f9; padding:15px; border:1px solid #ccc;">
+    <h3>🏁 Final Recommendations</h3>
+    <ul id="recommendations"></ul>
+    <button onclick="location.reload()">🔁 Start Over</button>
+  </div>
+</div>
+
+<script>
+const query = new URLSearchParams(location.search);
+const statVals = {
+  manual: parseInt(query.get('manual') || '0'),
+  intelligence: parseInt(query.get('intelligence') || '0'),
+  endurance: parseInt(query.get('endurance') || '0')
+};
+const primaryStat = Object.entries(statVals).sort((a, b) => b[1] - a[1])[0][0];
+
+let stepIndex = 0;
+let answers = {};
+let stepContainer = null;
+let nextBtn = null;
+
+const steps = [
+  {
+    title: "1️⃣ What are your top goals?",
+    name: "goals",
+    options: [
+      ["income", "💰 Passive Income"],
+      ["training", "🏋️‍♂️ Stat Growth"],
+      ["perks", "🎁 Special Perks"],
+      ["leadership", "🧠 Company Ownership"],
+      ["progression", "🚀 Fast Promotions"]
+    ]
+  },
+  {
+    title: "2️⃣ How would you describe your playstyle?",
+    name: "playstyle",
+    options: [
+      ["active", "⚡ Very Active"],
+      ["daily", "🕓 Daily Login"],
+      ["casual", "😴 Casual / Passive"]
+    ]
+  },
+  {
+    title: "3️⃣ Are you interested in Job Specials?",
+    name: "jobSpecials",
+    options: [
+      ["yes", "✅ Yes — I want them unlocked quickly"],
+      ["no", "❌ No — don't care about specials"]
+    ]
+  },
+  {
+    title: "4️⃣ Which trade-off are you willing to make?",
+    name: "tradeoff",
+    options: [
+      ["money", "💰 Money over Stats"],
+      ["stats", "🏋️‍♂️ Stats over Money"],
+      ["balanced", "⚖️ Balanced"]
+    ]
+  },
+  {
+    title: "5️⃣ Do you use drugs/boosts often?",
+    name: "drugUser",
+    options: [
+      ["frequent", "💊 Yes — I chain, refill, boost often"],
+      ["seldom", "📘 Not really — I'm efficient"],
+      ["never", "🚫 Never — clean & casual"]
+    ]
+  },
+  {
+    title: "6️⃣ Are you aiming to own or lead a company?",
+    name: "lead",
+    options: [
+      ["yes", "🏢 Yes — leadership & management"],
+      ["no", "👤 No — I want perks and freedom"]
+    ]
+  },
+  {
+    title: "7️⃣ What size of company team appeals to you?",
+    name: "teamSize",
+    options: [
+      ["solo", "👤 Solo or small team (1–5)"],
+      ["medium", "🔥 Medium crew (5–10)"],
+      ["large", "🏛️ Large active group (10+)"]
+    ]
+  }
+];
+
+const companyMap = {
+  "🎵 Music Store": {
+    label: "🎵 Music Store",
+    link: "/company_profiles/music_store/",
+    stat: "Manual",
+    perks: "Ad revenue, passive income",
+    leader: "Medium",
+    specials: "Music CDs, Improve Morale, Mood Boost"
+  },
+  "🍣 Restaurant": {
+    label: "🍣 Restaurant",
+    link: "/company_profiles/restaurant/",
+    stat: "Endurance",
+    perks: "Income + stat perks",
+    leader: "Medium",
+    specials: "Job Points for Energy Refills"
+  },
+  "📺 TV Station": {
+    label: "📺 TV Station",
+    link: "/company_profiles/tv_station/",
+    stat: "Intelligence",
+    perks: "Ultra-passive income",
+    leader: "Low",
+    specials: "Extra Nerve, Drug Cooldown Reduction"
+  },
+  "🥊 Sports Team": {
+    label: "🥊 Sports Team",
+    link: "/company_profiles/sports_team/",
+    stat: "Endurance",
+    perks: "Gym stat boosts",
+    leader: "Low",
+    specials: "Strength & Defense Boosters"
+  },
+  "🚜 Farm": {
+    label: "🚜 Farm",
+    link: "/company_profiles/farm/",
+    stat: "Manual",
+    perks: "Manual + gym synergy",
+    leader: "Medium",
+    specials: "Food Production, Natural Energy Buff"
+  },
+  "📜 Law Firm": {
+    label: "📜 Law Firm",
+    link: "/company_profiles/law_firm/",
+    stat: "Intelligence",
+    perks: "Stealth & speed boosts",
+    leader: "Medium",
+    specials: "Legal Counsel, Reduced Jail Time"
+  },
+  "🚢 Cruise Line": {
+    label: "🚢 Cruise Line",
+    link: "/company_profiles/cruise_line/",
+    stat: "Endurance",
+    perks: "Drug refill & travel perks",
+    leader: "Medium",
+    specials: "Travel Vouchers, Refill Boosts"
+  },
+  "💾 Tech Company": {
+    label: "💾 Tech Company",
+    link: "/company_profiles/tech_company/",
+    stat: "Intelligence",
+    perks: "Combat, stealth, accuracy",
+    leader: "High",
+    specials: "Hacking Tools, Stealth Buffs"
+  },
+  "🔧 Mechanic": {
+    label: "🔧 Mechanic",
+    link: "/company_profiles/mechanic/",
+    stat: "Manual",
+    perks: "Easy ownership, passive profit",
+    leader: "Very High",
+    specials: "Chaining Assistance, Repair Efficiency"
+  },
+  "🧪 Software Corp": {
+    label: "🧪 Software Corp",
+    link: "/company_profiles/software_corporation/",
+    stat: "Intelligence",
+    perks: "Promotion perks, leadership track",
+    leader: "High",
+    specials: "Coding Projects, Intelligence Boosters"
+  }
+};
+
+window.onload = () => {
+  stepContainer = document.getElementById("step-container");
+  nextBtn = document.getElementById("nextBtn");
+  renderStep();
+};
+
+function renderStep() {
+  const step = steps[stepIndex];
+  stepContainer.innerHTML = `<h3>${step.title}</h3>` + step.options.map(([value, label]) =>
+    `<label><input type="checkbox" name="${step.name}" value="${value}"> ${label}</label><br>`
+  ).join("");
+  nextBtn.style.display = "inline-block";
+}
+
+function nextStep() {
+  const step = steps[stepIndex];
+  const selected = Array.from(document.querySelectorAll(`input[name='${step.name}']:checked`)).map(i => i.value);
+  if (selected.length === 0) return alert("Please select at least one option.");
+  answers[step.name] = selected;
+  stepIndex++;
+  if (stepIndex >= steps.length) return showRecommendations();
+  renderStep();
+}
+
+function showRecommendations() {
+  stepContainer.style.display = "none";
+  nextBtn.style.display = "none";
+  const picks = new Set();
+  const { goals = [], playstyle = [], jobSpecials = [], tradeoff = [], drugUser = [], lead = [], teamSize = [] } = answers;
+  const stat = primaryStat;
+
+  if (goals.includes("income")) {
+    if (stat === "manual") picks.add("🎵 Music Store");
+    if (stat === "endurance") picks.add("🍣 Restaurant");
+    if (stat === "intelligence") picks.add("📺 TV Station");
+    if (playstyle.includes("casual")) picks.add("📺 TV Station");
+  }
+
+  if (goals.includes("training")) {
+    if (stat === "endurance") picks.add("🥊 Sports Team");
+    if (stat === "manual") picks.add("🚜 Farm");
+    if (stat === "intelligence") picks.add("📜 Law Firm");
+  }
+
+  if (goals.includes("perks")) {
+    if (stat === "intelligence" || stat === "manual") picks.add("💾 Tech Company");
+    if (stat === "endurance") picks.add("🚢 Cruise Line");
+  }
+
+  if (goals.includes("leadership") || lead.includes("yes")) {
+    picks.add("🔧 Mechanic");
+    picks.add("🧪 Software Corp");
+  }
+
+  if (tradeoff.includes("money")) picks.add("🎵 Music Store");
+  if (tradeoff.includes("stats")) picks.add("🥊 Sports Team");
+  if (jobSpecials.includes("yes")) picks.add("🚢 Cruise
+  <script>
+window.onload = () => {
+  stepContainer = document.getElementById("step-container");
+  nextBtn = document.getElementById("nextBtn");
+  renderStep();
+};
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

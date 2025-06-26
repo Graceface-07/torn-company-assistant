@@ -1,19 +1,19 @@
-# 💾 Tech Company
+﻿# ðŸ'¾ Tech Company
 
-**Stat Focus:** Intelligence  
-**Perks:** Combat enhancements, hacking bonuses, stealth perks  
-**Leadership Friendly:** High  
+**Stat Focus:** Intelligence
+**Perks:** Combat enhancements, hacking bonuses, stealth perks
+**Leadership Friendly:** High
 
-**Job Specials:**  
-- Stealth Boosts  
-- Cyber Attack Buffs  
-- Advanced Accuracy  
+**Job Specials:**
+- Stealth Boosts
+- Cyber Attack Buffs
+- Advanced Accuracy
 
 ---
 
 Tech Companies are great for combat-oriented players or those with a PvP edge. Their perks help with accuracy, stealth and power — especially if you use drugs, chain, or bounty hunt.
 
-**Best For:**  
-- Combat tacticians  
-- Drug-assisted hitters  
-- Stealth-chain combos  
+**Best For:**
+- Combat tacticians
+- Drug-assisted hitters
+- Stealth-chain combos

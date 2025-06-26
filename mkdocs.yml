@@ -1,31 +1,48 @@
-site_name: Torn Assistant
+﻿site_name: Torn Assistant
 theme:
   name: material
-
 nav:
-  - 🏠 Home: index.md
-
-  - 🧭 Decision Tools:
-      - 🏢 Company Recommender: decision_flow\company_recommender_workingstats.md
-      - 📋 Job Picker Wizard: decision_flow/job_picker.md
-
-  - 🏢 Company Profiles:
-      - Cruise Line: company_profiles/cruise_line.md
-      - Music Store: company_profiles/music_store.md
-      - Restaurant: company_profiles/restaurant.md
-      - TV Station: company_profiles/tv_station.md
-      - Sports Team: company_profiles/sports_team.md
-      - Law Firm: company_profiles/law_firm.md
-      - Farm: company_profiles/farm.md
-      - Tech Company: company_profiles/tech_company.md
-      - Software Corporation: company_profiles/software_corporation.md
-      - Mechanic: company_profiles/mechanic.md
-      - Sweet Shop: company_profiles/sweet_shop.md
-      - Game Development: company_profiles/game_development.md
-      - Furniture Store: company_profiles/furniture_store.md
-
-  - 👨‍💼 Job Profiles:
-      - Medical: company_profiles/medical.md
-      - Army: company_profiles/army.md
-      - Fire Department: company_profiles/fire_department.md
-      - Casino: company_profiles/casino.md
+- Welcome: index.md
+- Making Money:
+  - Profit Wizard Overview: profit_wizard/1a_bank_stock_access.md
+- Company Guide:
+        - Company Profiles:
+            - Bank: company_profiles/bank.md
+            - Casino: company_profiles/casino.md
+            - Cruise Line: company_profiles/cruise_line.md
+            - Education: company_profiles/education.md
+            - Farm: company_profiles/farm.md
+            - Fire Department: company_profiles/fire_department.md
+            - Furniture Store: company_profiles/furniture_store.md
+            - Game Development: company_profiles/game_development.md
+            - Grocery Store: company_profiles/grocery_store.md
+            - Insurance: company_profiles/insurance.md
+            - Job Specials: company_profiles/job_specials.md
+            - Law Firm: company_profiles/law_firm.md
+            - Logistics: company_profiles/logistics.md
+            - Mechanic: company_profiles/mechanic.md
+            - Medical: company_profiles/medical.md
+            - Music Store: company_profiles/music_store.md
+            - Restaurant: company_profiles/restaurant.md
+            - Software Corporation: company_profiles/software_corporation.md
+            - Sports Team: company_profiles/sports_team.md
+            - Sweet Shop: company_profiles/sweet_shop.md
+            - Tech Company: company_profiles/tech_company.md
+            - TV Station: company_profiles/tv_station.md       
+        - Stat Entry (Start Here): decision_flow/stat_entry.md
+        - Company Recommender: decision_flow/company_recommender_workingstats.md
+        - Job Wizard: decision_flow/job_picker.md
+        - Budget Advice: decision_flow/budget_advice.md
+        - Performance Review: decision_flow/performance_review.md
+        - Decision Flow Index: decision_flow/index.md
+        
+- Gear:
+  - Armour Loadouts: gear/armour/index.md
+  - Weapon Loadouts: gear/weapons/index.md
+- Docs:
+  - Changelog: changelog.md
+- Utilities:
+  - Connect API: connect_api.md
+  - Nav Optimizer: utils/nav_optimizer.md
+  - Link Checker: utils/link_checker.md
+  - Nav Cleanup: utils/nav_cleanup.md
