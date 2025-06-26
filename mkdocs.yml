@@ -33,16 +33,16 @@ nav:
         - Company Recommender: decision_flow/company_recommender_workingstats.md
         - Job Wizard: decision_flow/job_picker.md
         - Budget Advice: decision_flow/budget_advice.md
-        - Performance Review: decision_flow/performance_review.md
-        - Decision Flow Index: decision_flow/index.md
+        #- Performance Review: decision_flow/performance_review.md
+        #- Decision Flow Index: decision_flow/index.md
         
 - Gear:
-  - Armour Loadouts: gear/armour/index.md
-  - Weapon Loadouts: gear/weapons/index.md
+  - Armour Wiki: gear/armour/index.md
+  - Weapon Wiki: gear/weapons/index.md
 - Docs:
   - Changelog: changelog.md
-- Utilities:
-  - Connect API: connect_api.md
-  - Nav Optimizer: utils/nav_optimizer.md
-  - Link Checker: utils/link_checker.md
-  - Nav Cleanup: utils/nav_cleanup.md
+#- Utilities:
+#  - Connect API: connect_api.md
+#  - Nav Optimizer: utils/nav_optimizer.md
+#  - Link Checker: utils/link_checker.md
+#  - Nav Cleanup: utils/nav_cleanup.md
